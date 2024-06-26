@@ -1,0 +1,1053 @@
+Codebook, Date:  24.09.97  File: bspcode.SDB
+
+Var.Question             Variable Label                 Code     Option                                              Location/Format
+No.                      Name
+------------------------------------------------------------------------------------------------------------------------------------
+  1 VERSION              VERSION  *FILE VERSION*       VALUE     Version number                                          1-2 / C 2.0
+------------------------------------------------------------------------------------------------------------------------------------
+  2 COUNTRY              IDCNTRY  *COUNTRY ID*         VALUE     Country ID                                              3-5 / N 3.0
+------------------------------------------------------------------------------------------------------------------------------------
+  3 POP                  IDPOP    *POPULATION ID*          1     population 1                                              6 / C 1.0
+                                                           2     population 2
+                                                           3     population 3
+------------------------------------------------------------------------------------------------------------------------------------
+  4 STRAT                IDSTRAT  *STRATUM ID*         VALUE     Stratum ID                                              7-9 / N 3.0
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+  5 SCHOOL               IDSCHOOL *SCHOOL ID*          VALUE     School ID                                             10-15 / N 6.0
+------------------------------------------------------------------------------------------------------------------------------------
+  6 CLASS                IDCLASS  *CLASS ID*           VALUE     Class ID                                              16-23 / N 8.0
+------------------------------------------------------------------------------------------------------------------------------------
+  7 STUD                 IDSTUD   *STUDENT ID*         VALUE     Student ID                                           24-33 / N 10.0
+------------------------------------------------------------------------------------------------------------------------------------
+  8 GRADE                IDGRADE  *GRADE*              VALUE     Grade                                                 34-35 / N 2.0
+------------------------------------------------------------------------------------------------------------------------------------
+  9 GRADE                IDGRADER *GRADE*                  1     lower grade                                              36 / C 1.0
+                                                           2     upper grade
+------------------------------------------------------------------------------------------------------------------------------------
+ 10 WRITTENB.            ITWBOOK  *BOOKLET ID - WRITTEN TEST*                                                             37 / C 1.0
+                                                           0     no booklet
+                                                           1     booklet 1
+                                                           2     booklet 2
+                                                           3     booklet 3
+                                                           4     booklet 4
+                                                           5     booklet 5
+                                                           6     booklet 6
+                                                           7     booklet 7
+                                                           8     booklet 8
+                                                           9     missing
+------------------------------------------------------------------------------------------------------------------------------------
+ 11 ROTATION             ITROTAT  *ROTATION SCHEME*        0     not able to determine                                    38 / C 1.0
+                                                           1     rotation 1
+                                                           2     rotation 2
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 12 SEQ. NO.             ITSEQ    *SEQUENCE NUMBER*       00     not able to determine                                 39-40 / C 2.0
+                                                          01     1st student
+                                                          02     2nd student
+                                                          03     3rd student
+                                                          04     4th student
+                                                          05     5th student
+                                                          06     6th student
+                                                          07     7th student
+                                                          08     8th student
+                                                          09     9th student
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 13 LANG                 ITLANG   *LANGUAGE OF TESTING*                                                                41-43 / N 3.0
+                                                       VALUE     Language of test
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 14 STREAM               ITSTREAM *STREAM OR TRACK*    VALUE     Stream                                                44-46 / N 3.0
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 15 ITPARTM1             ITPARTM1 *PARTICIPATION BOOKLET M1*                                                              47 / C 1.0
+                                                           2     student absent in session
+                                                           3     student participated in session
+                                                           4     booklet lost
+------------------------------------------------------------------------------------------------------------------------------------
+ 16 ITPARTM2             ITPARTM2 *PARTICIPATION BOOKLET M2*                                                              48 / C 1.0
+                                                           2     student absent in session
+                                                           3     student participated in session
+                                                           4     booklet lost
+------------------------------------------------------------------------------------------------------------------------------------
+ 17 ITPARTM3             ITPARTM3 *PARTICIPATION BOOKLET M3*                                                              49 / C 1.0
+                                                           2     student absent in session
+                                                           3     student participated in session
+                                                           4     booklet lost
+------------------------------------------------------------------------------------------------------------------------------------
+ 18 ITPARTM4             ITPARTM4 *PARTICIPATION BOOKLET M4*                                                              50 / C 1.0
+                                                           2     student absent in session
+                                                           3     student participated in session
+                                                           4     booklet lost
+------------------------------------------------------------------------------------------------------------------------------------
+ 19 ITPARTM5             ITPARTM5 *PARTICIPATION BOOKLET M5*                                                              51 / C 1.0
+                                                           2     student absent in session
+                                                           3     student participated in session
+                                                           4     booklet lost
+------------------------------------------------------------------------------------------------------------------------------------
+ 20 ITPARTS1             ITPARTS1 *PARTICIPATION BOOKLET S1*                                                              52 / C 1.0
+                                                           2     student absent in sessions
+                                                           3     student participated in session
+                                                           4     booklet lost
+------------------------------------------------------------------------------------------------------------------------------------
+ 21 ITPARTS2             ITPARTS2 *PARTICIPATION BOOKLET S2*                                                              53 / C 1.0
+                                                           2     student absent in sessions
+                                                           3     student participated in session
+                                                           4     booklet lost
+------------------------------------------------------------------------------------------------------------------------------------
+ 22 ITPARTS3             ITPARTS3 *PARTICIPATION BOOKLET S3*                                                              54 / C 1.0
+                                                           2     student absent in sessions
+                                                           3     student participated in session
+                                                           4     booklet lost
+------------------------------------------------------------------------------------------------------------------------------------
+ 23 ITPARTS4             ITPARTS4 *PARTICIPATION BOOKLET S4*                                                              55 / C 1.0
+                                                           2     student absent in sessions
+                                                           3     student participated in session
+                                                           4     booklet lost
+------------------------------------------------------------------------------------------------------------------------------------
+ 24 ITPARTS5             ITPARTS5 *PARTICIPATION BOOKLET S5*                                                              56 / C 1.0
+                                                           2     student absent in sessions
+                                                           3     student participated in session
+                                                           4     booklet lost
+------------------------------------------------------------------------------------------------------------------------------------
+ 25 ITPARTG1             ITPARTG1 *PARTICIPATION BOOKLET G1*                                                              57 / C 1.0
+                                                           2     student absent in sessions
+                                                           3     student participated in session
+                                                           4     booklet lost
+------------------------------------------------------------------------------------------------------------------------------------
+ 26 ITPARTG2             ITPARTG2 *PARTICIPATION BOOKLET G2*                                                              58 / C 1.0
+                                                           2     student absent in sessions
+                                                           3     student participated in session
+                                                           4     booklet lost
+------------------------------------------------------------------------------------------------------------------------------------
+ 27 ITPART               ITPART   *OVERALL PARTICIPATION PA*                                                              59 / C 1.0
+                                                           2     student absent in all sessions 1 or 2 
+                                                           3     student participated in at least one session
+                                                           4     booklet lost
+------------------------------------------------------------------------------------------------------------------------------------
+ 28 ITPART               ITPARTW  *OVERALL PARTICIPATION WRITTEN TEST*                                                    60 / C 1.0
+                                                           2     student absent
+                                                           3     student completed at least one task
+------------------------------------------------------------------------------------------------------------------------------------
+ 29 M1-Q1                BSPM11   BSPM/DICE/APPLICATION OF RULE                                                        61-62 / C 2.0
+                                                          10     part. correct
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 30 M1-Q2                BSPM12   BSPM/DICE/PATTERN RECOGNITION                                                        63-64 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          12     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 31 M1-Q3                BSPM13   BSPM/DICE/SYSTEMATIC DATA COLLECTION                                                 65-66 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 32 M1-Q4                BSPM14   BSPM/DICE/TIMES RECORDING CHANGED NUMBER                                             67-68 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 33 M1-Q5A               BSPM15A  BSPM/DICE/WHAT NUMBER RECORD MOST                                                    69-70 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 34 M1-Q5B               BSPM15B  BSPM/DICE/WHY DID IT HAPPEN THIS WAY                                                 71-72 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          12     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 35 M2-Q1                BSPM21   BSPM/CALCULATOR/CALCULATIONS                                                         73-74 / C 2.0
+                                                          10     minimally correct
+                                                          20     partially corr.
+                                                          30     complete resp.
+                                                          79     incorrect response
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 36 M2-Q2                BSPM22   BSPM/CALCULATOR/NOTICE ABOUT MULTIPLICAT                                             75-76 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 37 M2-Q3                BSPM23   BSPM/CALCULATOR/33334*33334=                                                         77-78 / C 2.0
+                                                          10     part. correct
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 38 M2-Q4                BSPM24   BSPM/CALCULATOR/3333334*3333334=                                                     79-80 / C 2.0
+                                                          10     part. correct
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 39 M2-Q5                BSPM25   BSPM/CALCULATOR/HOW FIGURED OUT Q 3+4                                                81-82 / C 2.0
+                                                          10     part. correct
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 40 M2-Q6A               BSPM26A  BSPM/CALCULATOR/REASONS WHY WRONG                                                    83-84 / C 2.0
+                                                          10     minimally correct
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          29     other part corr.
+                                                          30     complete resp.
+                                                          39     other compl. resp
+                                                          70     incorrect
+                                                          76     "
+                                                          79     other incorr.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 41 M2-Q6B               BSPM26B  BSPM/CALCULATOR/STRATEGY FOR NUMBERS                                                 85-86 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 42 M3-Q1                BSPM31   BSPM/FOLDING/SHAPE 1    10     part. correct                                         87-88 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          76     incorrect response
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 43 M3-Q2                BSPM32   BSPM/FOLDING/SHAPE 2    10     part. correct                                         89-90 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          76     incorrect response
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 44 M3-Q3                BSPM33   BSPM/FOLDING/SHAPE 3    10     part. correct                                         91-92 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          76     incorrect response
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 45 M3-Q4                BSPM34   BSPM/FOLDING/SHAPE 4    10     minimally correct                                     93-94 / C 2.0
+                                                          11     "
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          29     other part corr.
+                                                          30     complete resp.
+                                                          31     "
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 46 M4-Q1                BSPM41   BSPM/AROUND BEND/MEASURE LENGTH + WIDTH                                              95-96 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 47 M4-Q2                BSPM42   BSPM/AROUND BEND/REAL SIZE                                                           97-98 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          70     incor. resp.
+                                                          71     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 48 M4-Q3                BSPM43   BSPM/AROUND BEND/LIST OF FURNITURE                                                  99-100 / C 2.0
+                                                          10     part. correct
+                                                          20     complete resp.
+                                                          21     "
+                                                          79     incorrect response
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 49 M4-Q4                BSPM44   BSPM/AROUND BEND/PIECES AROUND THE BEND                                            101-102 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          79     incorrect response
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 50 M4-Q5A               BSPM45A  BSPM/AROUND BEND/DRAW MODELS                                                       103-104 / C 2.0
+                                                          10     minimally correct
+                                                          20     partially corr.
+                                                          30     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 51 M4-Q5B               BSPM45B  BSPM/AROUND BEND/RELATE MODELS                                                     105-106 / C 2.0
+                                                          10     part. correct
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 52 M4-Q5C               BSPM45C  BSPM/AROUND BEND/JUDGING EXP. DATA                                                 107-108 / C 2.0
+                                                          10     minimally correct
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          21     "
+                                                          30     complete resp.
+                                                          31     "
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 53 M4-Q6                BSPM46   BSPM/AROUND BEND/FIND A RULE                                                       109-110 / C 2.0
+                                                          10     minimally correct
+                                                          11     "
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          30     complete resp.
+                                                          39     other compl. resp
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 54 M5-Q1                BSPM51   BSPM/PACKAGING/DRAWING BOX WITH 4 BALLS                                            111-112 / C 2.0
+                                                          10     minimally correct
+                                                          11     "
+                                                          19     other mini. corr
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          23     "
+                                                          29     "
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 55 M5-Q2                BSPM52   BSPM/PACKAGING/DRAWING THE NET                                                     113-114 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 56 M5-Q3                BSPM53   BSPM/PACKAGING/CHOOSE ONE BOX                                                      115-116 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          76     incorrect response
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 57 S1-Q1A               BSPS11A  BSPS/PULSE/QUALITY DATA PRESENTATION                                               117-118 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 58 S1-Q1B               BSPS11B  BSPS/PULSE/GATHERING DATA                                                          119-120 / C 2.0
+                                                          10     minimally corr.
+                                                          11     "
+                                                          12     "
+                                                          19     other mini. corr
+                                                          20     part. corr.
+                                                          29     other part corr.
+                                                          30     complete
+                                                          31     "
+                                                          39     other complete
+                                                          70     incorrect
+                                                          71     "
+                                                          79     other incorrect
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 59 S1-Q2                BSPS12   BSPS/PULSE/PULSE AFTER CLIMBING                                                    121-122 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 60 S1-Q3                BSPS13   BSPS/PULSE/WHY DID PULSE CHANGE                                                    123-124 / C 2.0
+                                                          10     mini. correct
+                                                          11     "
+                                                          19     other mini. corr
+                                                          20     part. corr.
+                                                          21     "
+                                                          29     other part corr.
+                                                          30     complete
+                                                          39     other complete
+                                                          70     incorr. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                               not admin.:98     missing
+------------------------------------------------------------------------------------------------------------------------------------
+ 61 S2-Q1                BSPS21   BSPS/MAGNETS/FIND STRONGER MAGNET                                                  125-126 / C 2.0
+                                                          10     complete Response
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 62 S2-Q2A               BSPS22A  BSPS/MAGNETS/A-WAY FIND STRONGER MAGNET                                            127-128 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          14     "
+                                                          15     "
+                                                          16     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 63 S2-Q2B               BSPS22B  BSPS/MAGNETS/B-WAYS FIND STRONGER MAGNET                                           129-130 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          14     "
+                                                          15     "
+                                                          16     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 64 S2-Q2C               BSPS22C  BSPS/MAGNETS/C-WAYS FIND STRONGER MAGNET                                           131-132 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          14     "
+                                                          15     "
+                                                          16     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 65 S3-Q1                BSPS31   BSPS/BATTERIES/TEST GOOD VS WORN OUT                                               133-134 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 66 S3-Q2                BSPS32   BSPS/BATTERIES/DECIDE GOOD VS WORN OUT                                             135-136 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 67 S3-Q3                BSPS33   BSPS/BATTERIES/BATTERIES IN FLASHLIGHT                                             137-138 / C 2.0
+                                                          10     complete Response
+                                                          79     incorrect response
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 68 S3-Q4                BSPS34   BSPS/BATTERIES/BEST WAY PUT BATTERIES                                              139-140 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          14     
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          76     incorrect response
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 69 S4-Q1A               BSPS41A  BSPS/RUBBER BAND/DATA PRESENTATION                                                 141-142 / C 2.0
+                                                          10     part. complete response
+                                                          11     "
+                                                          19     "
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incorr. resp
+                                                          71     "
+                                                          79     other incorr.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 70 S4-Q1B               BSPS41B  BSPS/RUBBER BAND/DATA GATHERING                                                    143-144 / C 2.0
+                                                          10     minimally correct
+                                                          11     "
+                                                          12     "
+                                                          19     other mini. corr.
+                                                          20     part. correct
+                                                          21     "
+                                                          29     other part corr.
+                                                          30     complete
+                                                          39     other complete
+                                                          70     incorrect
+                                                          79     other incorrect
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 71 S4-Q2                BSPS42   BSPS/RUBBER BAND/GRAPH RESULTS                                                     145-146 / C 2.0
+                                                          10     minimally correct
+                                                          19     other mini. corr.
+                                                          20     partially correct
+                                                          21     "
+                                                          22     "
+                                                          23     "
+                                                          29     other part. corr.
+                                                          30     complete
+                                                          70     incorrect
+                                                          71     "
+                                                          79     other incorrect
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 72 S4-Q3                BSPS43   BSPS/RUBBER BAND/BECOME LONGER                                                     147-148 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 73 S4-Q4                BSPS44   BSPS/RUBBER BAND/DESCRIPTION OF CHANGES                                            149-150 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 74 S4-Q5                BSPS45   BSPS/RUBBER BAND/WITH 2 MORE RINGS                                                 151-152 / C 2.0
+                                                          10     complete Response
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 75 S4-Q6                BSPS46   BSPS/RUBBER BAND/THIS HAPPENS WHY                                                  153-154 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 76 S5-Q1                BSPS51   BSPS/TEMPERATURE/PLAN   10     part. correct                                       155-156 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 77 S5-Q2A               BSPS52A  BSPS/TEMPERATURE/THERMOMETER USE                                                   157-158 / C 2.0
+                                                          10     complete Response
+                                                          70     incor. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 78 S5-Q2B               BSPS52B  BSPS/TEMPERATURE/QUALITY OF PRESENTATION                                           159-160 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 79 S5-Q2C               BSPS52C  BSPS/TEMPERATURE/GATHERING DATA                                                    161-162 / C 2.0
+                                                          10     minimally correct
+                                                          11     "
+                                                          12     "
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          30     complete resp.
+                                                          31     "
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 80 S5-Q3                BSPS53   BSPS/TEMPERATURE/EFFECT ON SPEED                                                   163-164 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 81 S5-Q4                BSPS54   BSPS/TEMPERATURE/EXPLANATION FOR EFFECTS                                           165-166 / C 2.0
+                                                          11     part. correct
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     other complete
+                                                          29     "
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 82 S5-Q5                BSPS55   BSPS/TEMPERATURE/CHANGES IN PLAN                                                   167-168 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 83 SM1-Q1               BSPG11   BSPG/SHADOWS/SIZE MOVING CLOSER                                                    169-170 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          76     incorrect response
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 84 SM1-Q2               BSPG12   BSPG/SHADOWS/WHY IS SHADOW LARGER CARD                                             171-172 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          76     incorrect response
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 85 SM1-Q3               BSPG13   BSPG/SHADOWS/FIND 3 MORE POSITIONS                                                 173-174 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          76     incorrect response
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 86 SM1-Q4               BSPG14   BSPG/SHADOWS/DESCRIBE INVESTIGATION                                                175-176 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 87 SM1-Q5               BSPG15   BSPG/SHADOWS/PRESENT MEASUREMENTS                                                  177-178 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          76     incorrect response
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 88 SM1-Q6               BSPG16   BSPG/SHADOWS/GENERAL CONCLUSIONS                                                   179-180 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 89 SM2-Q1A              BSPG21A  BSPG/PLASTICINE/MAKE A 20 G LUMP                                                   181-182 / C 2.0
+                                                          10     complete Response
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 90 SM2-Q1B              BSPG21B  BSPG/PLASTICINE/HOW TO MAKE A 20 G LUMP                                            183-184 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 91 SM2-Q2A              BSPG22A  BSPG/PLASTICINE/MAKE A 10 G LUMP                                                   185-186 / C 2.0
+                                                          10     part. correct
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 92 SM2-Q2B              BSPG22B  BSPG/PLASTICINE/HOW TO MAKE A 10 G LUMP                                            187-188 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 93 SM2-Q3A              BSPG23A  BSPG/PLASTICINE/MAKE A 15 G LUMP                                                   189-190 / C 2.0
+                                                          10     complete Response
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 94 SM2-Q3B              BSPG23B  BSPG/PLASTICINE/HOW TO MAKE A 15 G LUMP                                            191-192 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 95 SM2-Q4A              BSPG24A  BSPG/PLASTICINE/MAKE A 35 G LUMP                                                   193-194 / C 2.0
+                                                          10     part. correct
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 96 SM2-Q4B              BSPG24B  BSPG/PLASTICINE/HOW TO MAKE A 35 G LUMP                                            195-196 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 97 SQ2-2                BSBGSEX  GEN\STUDENT'S SEX        1     girl                                                    197 / C 1.0
+                                                           2     boy
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 98 WEIGHT               TOTWGT   *STUDENT WEIGHT*     VALUE     Weight                                              198-205 / N 8.3
+------------------------------------------------------------------------------------------------------------------------------------
+ 99 WEIGHT               HOUWGT   *HOUSE WEIGHT*       VALUE     Weight                                              206-211 / N 6.3
+------------------------------------------------------------------------------------------------------------------------------------
+100 WEIGHT               SENWGT   *SENATE WEIGHT*      VALUE     Weight                                              212-217 / N 6.3
+------------------------------------------------------------------------------------------------------------------------------------
+101 WEIGHT               WGTFAC1  *WEIGHTING FACTOR I (SCHOOL)*                                                      218-224 / N 7.2
+                                                       VALUE     Weight
+------------------------------------------------------------------------------------------------------------------------------------
+102 WEIGHT               WGTADJ1  *WEIGHTING ADJUSTMENT I (SCHOOL)*                                                  225-230 / N 6.3
+                                                       VALUE     Adjustment Factor
+------------------------------------------------------------------------------------------------------------------------------------
+103 WEIGHT               WGTFAC2  *WEIGHTING FACTOR II (CLASS)*                                                      231-236 / N 6.3
+                                                       VALUE     Weight
+------------------------------------------------------------------------------------------------------------------------------------
+104 WEIGHT               WGTFAC3  *WEIGHTING FACTOR III (STUDENT)*                                                   237-242 / N 6.3
+                                                       VALUE     Weight
+------------------------------------------------------------------------------------------------------------------------------------
+105 WEIGHT               WGTADJ3  *WEIGHTING ADJUSTMENT III (STUDENT)*                                               243-248 / N 6.3
+                                                       VALUE     Adjustment Factor
+------------------------------------------------------------------------------------------------------------------------------------
+106 JACKKNIFE            JKZONE   *ZONE CODE*          VALUE     Zone code                                           249-250 / N 2.0
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+107 JACKKNIFE            JKINDIC  *REPLICATE CODE*         0     zero weight                                             251 / N 1.0
+                                                           1     double weight
+------------------------------------------------------------------------------------------------------------------------------------
+108 INTIMSS              INTIMSS  *INTIMSS*                0     Student not part of international component of TIMSS    252 / N 1.0
+                                                           1     Student part of international component of TIMSS
+------------------------------------------------------------------------------------------------------------------------------------
+109 SCORE                BIMATSCR *INTERNATIONAL MATHEMATICS SCORE*                                                  253-258 / N 6.2
+                                                       VALUE     International-Score
+------------------------------------------------------------------------------------------------------------------------------------
+110 SCORE                BIMATEAP *INTERNATIONAL MATHEMATICS SCORE (EAP)*                                            259-264 / N 6.2
+                                                       VALUE     EAP-Score
+------------------------------------------------------------------------------------------------------------------------------------
+111 SCORE                BISCISCR *INTERNATIONAL SCIENCE SCORE*                                                      265-270 / N 6.2
+                                                       VALUE     International-Score
+------------------------------------------------------------------------------------------------------------------------------------
+112 SCORE                BISCIEAP *INTERNATIONAL SCIENCE SCORE (EAP)*                                                271-276 / N 6.2
+                                                       VALUE     EAP-Score
+------------------------------------------------------------------------------------------------------------------------------------
+113 SYSTEM               DPCDATE  *FILE CREATION DATE AT DPC HAMBURG*                                                277-282 / N 6.0
+                                                      MMDDYY     File Creation Date
+--- END OF CODEBOOK ----------------------------------------------------------------------------------------------------------------
+				BSPCODE.CDT
+

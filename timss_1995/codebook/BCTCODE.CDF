@@ -1,0 +1,15 @@
+VERSION  VERSION       1    2  2 0 *FILE VERSION*                           Version number: VALUE;
+IDCNTRY  COUNTRY       3    5  3 0 *COUNTRY ID*                             Country ID:VALUE;
+IDPOP    POP           6    6  1 0 *POPULATION ID*                          population 1:1;population 2:2;
+IDSTRAT  STRAT         7    9  3 0 *STRATUM ID*                             Stratum ID:VALUE;missing:999;not admin.:998;
+IDSCHOOL SCHOOL       10   15  6 0 *SCHOOL ID*                              School ID:VALUE;
+ITROTAT  ROTATION     16   16  1 0 *ROTATION SCHEME*                        rotation 1:1;rotation 2:2;missing:9;not admin.:8;
+ITPAS1   PA2-1        17   17  1 0 *ADEQUACY OF ROOM*                       inadequate:1;adequate:2;excellent:3;missing:9;not admin.:8;
+ITPAS2   PA2-2        18   18  1 0 *TIME ALLOTED PER STATION*               too short:1;just about right:2;too long:3;missing:9;not admin.:8;
+ITPAS3   PA2-3        19   19  1 0 *ADEQUACY OF EQUIPEMENT AND MATERIAL*    inadequate:1;adequate:2;excellent:3;missing:9;not admin.:8;
+ITPAS4   PA2-4        20   20  1 0 *MISSING INFORMATION FROM MANUAL*        yes:1;no:2;missing:9;not admin.:8;
+ITPAS5   PA2-5        21   21  1 0 *CLEARNESS OF INSTRUCTIONS*              unclear:1;clear:2;very clear:3;missing:9;not admin.:8;
+ITPAS6   PA2-6        22   22  1 0 *DIFFICULTY OF PERFORMANCE TASKS*        easy:1;just about right:2;difficult:3;missing:9;not admin.:8;
+ITPAS7   PA2-7        23   23  1 0 *STUDENTS ATTITUDE TOWARDS ASSESSMENT*   positive:1;neutral:2;negative:3;missing:9;not admin.:8;
+ITPAS8   PA2-8        24   24  1 0 *STAFFS ATTITUDE TOWARDS ASSESSMENT*     positive:1;neutral:2;negative:3;missing:9;not admin.:8;
+DPCDATE  SYSTEM       25   30  6 0 *FILE CREATION DATE AT DPC HAMBURG*      File Creation Date:MMDDYY;

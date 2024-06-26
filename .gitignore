@@ -1,0 +1,12 @@
+# dataset
+*.zip
+*.dta
+*.sav
+*.raw
+*.stunicode
+*.log
+
+# results
+huang_2021/huang_2021_pisa*.xlsx
+pisa_2018/huang_2021_pisa*.xlsx
+pisa_2022/huang_2021_pisa*.xlsx

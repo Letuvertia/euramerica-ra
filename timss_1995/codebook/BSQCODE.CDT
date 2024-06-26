@@ -1,0 +1,2071 @@
+Codebook, Date:  24.09.97  File: bsqcode.SDB
+
+Var.Question             Variable Label                 Code     Option                                              Location/Format
+No.                      Name
+------------------------------------------------------------------------------------------------------------------------------------
+  1 VERSION    VERSION  *FILE VERSION*                 VALUE     Version number                                          1-2 / C 2.0
+------------------------------------------------------------------------------------------------------------------------------------
+  2 COUNTRY    IDCNTRY  *COUNTRY ID*                   VALUE     Country ID                                              3-5 / N 3.0
+------------------------------------------------------------------------------------------------------------------------------------
+  3 POP        IDPOP    *POPULATION ID*                    1     population 1                                              6 / C 1.0
+                                                           2     population 2
+                                                           3     population 3
+------------------------------------------------------------------------------------------------------------------------------------
+  4 STRAT      IDSTRAT  *STRATUM ID*                   VALUE     Stratum ID                                              7-9 / N 3.0
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+  5 SCHOOL     IDSCHOOL *SCHOOL ID*                    VALUE     School ID                                             10-15 / N 6.0
+------------------------------------------------------------------------------------------------------------------------------------
+  6 CLASS      IDCLASS  *CLASS ID*                     VALUE     Class ID                                              16-23 / N 8.0
+------------------------------------------------------------------------------------------------------------------------------------
+  7 STUD       IDSTUD   *STUDENT ID*                   VALUE     Student ID                                           24-33 / N 10.0
+------------------------------------------------------------------------------------------------------------------------------------
+  8 M1-Q1      BSPM11   BSPM/DICE/APPLICATION OF RULE     10     part. correct                                         34-35 / C 2.0
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+  9 M1-Q1      BRPM11   BRELM/DICE/APPLICATION OF RULE    10     part. correct                                         36-37 / C 2.0
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 10 M1-Q1      BIPM11   BDIFFM/DICE/APPLICATION OF RULE    0     identical codes                                          38 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 11 M1-Q2      BSPM12   BSPM/DICE/PATTERN RECOGNITION     10     complete Response                                     39-40 / C 2.0
+                                                          11     "
+                                                          12     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 12 M1-Q2      BRPM12   BRELM/DICE/PATTERN RECOGNITION    10     complete Response                                     41-42 / C 2.0
+                                                          11     "
+                                                          12     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 13 M1-Q2      BIPM12   BDIFFM/DICE/PATTERN RECOGNITION    0     identical codes                                          43 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 14 M1-Q3      BSPM13   BSPM/DICE/SYSTEMATIC DATA COLLECTION                                                           44-45 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 15 M1-Q3      BRPM13   BRELM/DICE/SYSTEMATIC DATA COLLECTION                                                          46-47 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 16 M1-Q3      BIPM13   BDIFFM/DICE/SYSTEMATIC DATA COLLECTION                                                            48 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 17 M1-Q4      BSPM14   BSPM/DICE/TIMES RECORDING CHANGED NUMBER                                                       49-50 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 18 M1-Q4      BRPM14   BRELM/DICE/TIMES RECORDING CHANGED NUM.                                                        51-52 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 19 M1-Q4      BIPM14   BDIFFM/DICE/TIMES RECORDING CHANGED NUM.                                                          53 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 20 M1-Q5A     BSPM15A  BSPM/DICE/WHAT NUMBER RECORD MOST 10     complete Response                                     54-55 / C 2.0
+                                                          11     "
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 21 M1-Q5A     BRPM15A  BRELM/DICE/WHAT NUMBER RECORD MOST                                                             56-57 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 22 M1-Q5A     BIPM15A  BDIFFM/DICE/WHAT NUMBER RECORD MOST                                                               58 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 23 M1-Q5B     BSPM15B  BSPM/DICE/WHY DID IT HAPPEN THIS WAY                                                           59-60 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          12     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 24 M1-Q5B     BRPM15B  BRELM/DICE/WHY DID IT HAPPEN THIS WAY                                                          61-62 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          12     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 25 M1-Q5B     BIPM15B  BDIFFM/DICE/WHY DID IT HAPPEN THIS WAY                                                            63 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 26 M2-Q1      BSPM21   BSPM/CALCULATOR/CALCULATIONS      10     minimally correct                                     64-65 / C 2.0
+                                                          20     partially corr.
+                                                          30     complete resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 27 M2-Q1      BRPM21   BRELM/CALCULATOR/CALCULATIONS     10     minimally correct                                     66-67 / C 2.0
+                                                          20     partially corr.
+                                                          30     complete resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 28 M2-Q1      BIPM21   BDIFFM/CALCULATOR/CALCULATIONS     0     identical codes                                          68 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 29 M2-Q2      BSPM22   BSPM/CALCULATOR/NOTICE ABOUT MULTIPLICAT                                                       69-70 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 30 M2-Q2      BRPM22   BRELM/CALCULATOR/NOTICE ABOUT MULTIPL.                                                         71-72 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 31 M2-Q2      BIPM22   BDIFFM/CALCULATOR/NOTICE ABOUT MULTIPL.                                                           73 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 32 M2-Q3      BSPM23   BSPM/CALCULATOR/33334*33334=      10     part. correct                                         74-75 / C 2.0
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 33 M2-Q3      BRPM23   BRELM/CALCULATOR/33334*33334=     10     part. correct                                         76-77 / C 2.0
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 34 M2-Q3      BIPM23   BDIFFM/CALCULATOR/33334*33334=     0     identical codes                                          78 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 35 M2-Q4      BSPM24   BSPM/CALCULATOR/3333334*3333334=  10     part. correct                                         79-80 / C 2.0
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 36 M2-Q4      BRPM24   BRELM/CALCULATOR/3333334*3333334= 10     part. correct                                         81-82 / C 2.0
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 37 M2-Q4      BIPM24   BDIFFM/CALCULATOR/3333334*3333334= 0     identical codes                                          83 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 38 M2-Q5      BSPM25   BSPM/CALCULATOR/HOW FIGURED OUT Q 3+4                                                          84-85 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 39 M2-Q5      BRPM25   BRELM/CALCULATOR/HOW FIGURED OUT Q 3+4                                                         86-87 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 40 M2-Q5      BIPM25   BDIFFM/CALCULATOR/HOW FIGURED OUT Q 3+4                                                           88 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 41 M2-Q6A     BSPM26A  BSPM/CALCULATOR/REASONS WHY WRONG 10     minimally correct                                     89-90 / C 2.0
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          29     other part corr.
+                                                          30     complete resp.
+                                                          39     other compl. resp
+                                                          70     incorrect
+                                                          76     "
+                                                          79     other incorr.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 42 M2-Q6A     BRPM26A  BRELM/CALCULATOR/REASONS WHY WRONG                                                             91-92 / C 2.0
+                                                          10     minimally correct
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          29     other part corr.
+                                                          30     complete resp.
+                                                          39     other compl. resp
+                                                          70     incorrect
+                                                          76     "
+                                                          79     other incorr.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 43 M2-Q6A     BIPM26A  BDIFFM/CALCULATOR/REASONS WHY WRONG                                                               93 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 44 M2-Q6B     BSPM26B  BSPM/CALCULATOR/STRATEGY FOR NUMBERS                                                           94-95 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 45 M2-Q6B     BRPM26B  BRELM/CALCULATOR/STRATEGY FOR NUMBERS                                                          96-97 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 46 M2-Q6B     BIPM26B  BDIFFM/CALCULATOR/STRATEGY FOR NUMBERS                                                            98 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 47 M3-Q1      BSPM31   BSPM/FOLDING/SHAPE 1              10     part. correct                                        99-100 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 48 M3-Q1      BRPM31   BRELM/FOLDING/SHAPE 1             10     part. correct                                       101-102 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 49 M3-Q1      BIPM31   BDIFFM/FOLDING/SHAPE 1             0     identical codes                                         103 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 50 M3-Q2      BSPM32   BSPM/FOLDING/SHAPE 2              10     part. correct                                       104-105 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 51 M3-Q2      BRPM32   BRELM/FOLDING/SHAPE 2             10     part. correct                                       106-107 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 52 M3-Q2      BIPM32   BDIFFM/FOLDING/SHAPE 2             0     identical codes                                         108 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 53 M3-Q3      BSPM33   BSPM/FOLDING/SHAPE 3              10     part. correct                                       109-110 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 54 M3-Q3      BRPM33   BRELM/FOLDING/SHAPE 3             10     part. correct                                       111-112 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 55 M3-Q3      BIPM33   BDIFFM/FOLDING/SHAPE 3             0     identical codes                                         113 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 56 M3-Q4      BSPM34   BSPM/FOLDING/SHAPE 4              10     minimally correct                                   114-115 / C 2.0
+                                                          11     "
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          29     other part corr.
+                                                          30     complete resp.
+                                                          31     "
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 57 M3-Q4      BRPM34   BRELM/FOLDING/SHAPE 4             10     minimally correct                                   116-117 / C 2.0
+                                                          11     "
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          29     other part corr.
+                                                          30     complete resp.
+                                                          31     "
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 58 M3-Q4      BIPM34   BDIFFM/FOLDING/SHAPE 4             0     identical codes                                         118 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 59 M4-Q1      BSPM41   BSPM/AROUND BEND/MEASURE LENGTH + WIDTH                                                      119-120 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 60 M4-Q1      BRPM41   BRELM/AROUND BEND/MEASURE LENGTH+WIDTH                                                       121-122 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 61 M4-Q1      BIPM41   BDIFFM/AROUND BEND/MEASURE LENGTH+WIDTH                                                          123 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 62 M4-Q2      BSPM42   BSPM/AROUND BEND/REAL SIZE        10     part. correct                                       124-125 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          70     incor. resp.
+                                                          71     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 63 M4-Q2      BRPM42   BRELM/AROUND BEND/REAL SIZE       10     part. correct                                       126-127 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          70     incor. resp.
+                                                          71     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 64 M4-Q2      BIPM42   BDIFFM/AROUND BEND/REAL SIZE       0     identical codes                                         128 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 65 M4-Q3      BSPM43   BSPM/AROUND BEND/LIST OF FURNITURE                                                           129-130 / C 2.0
+                                                          10     part. correct
+                                                          20     complete resp.
+                                                          21     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 66 M4-Q3      BRPM43   BRELM/AROUND BEND/LIST OF FURNITURE                                                          131-132 / C 2.0
+                                                          10     part. correct
+                                                          20     complete resp.
+                                                          21     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 67 M4-Q3      BIPM43   BDIFFM/AROUND BEND/LIST OF FURNITURE                                                             133 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 68 M4-Q4      BSPM44   BSPM/AROUND BEND/PIECES AROUND THE BEND                                                      134-135 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 69 M4-Q4      BRPM44   BRELM/AROUND BEND/PIECES AROUND THE BEND                                                     136-137 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 70 M4-Q4      BIPM44   BDIFFM/AROUND BEND/PIECES AROUND T. BEND                                                         138 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 71 M4-Q5A     BSPM45A  BSPM/AROUND BEND/DRAW MODELS      10     minimally correct                                   139-140 / C 2.0
+                                                          20     partially corr.
+                                                          30     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 72 M4-Q5A     BRPM45A  BRELM/AROUND BEND/DRAW MODELS     10     minimally correct                                   141-142 / C 2.0
+                                                          20     partially corr.
+                                                          30     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 73 M4-Q5A     BIPM45A  BDIFFM/AROUND BEND/DRAW MODELS     0     identical codes                                         143 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 74 M4-Q5B     BSPM45B  BSPM/AROUND BEND/RELATE MODELS    10     part. correct                                       144-145 / C 2.0
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 75 M4-Q5B     BRPM45B  BRELM/AROUND BEND/RELATE MODELS   10     part. correct                                       146-147 / C 2.0
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 76 M4-Q5B     BIPM45B  BDIFFM/AROUND BEND/RELATE MODELS   0     identical codes                                         148 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 77 M4-Q5C     BSPM45C  BSPM/AROUND BEND/JUDGING EXP. DATA                                                           149-150 / C 2.0
+                                                          10     minimally correct
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          21     "
+                                                          30     complete resp.
+                                                          31     "
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 78 M4-Q5C     BRPM45C  BRELM/AROUND BEND/JUDGING EXP. DATA                                                          151-152 / C 2.0
+                                                          10     minimally correct
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          21     "
+                                                          30     complete resp.
+                                                          31     "
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 79 M4-Q5C     BIPM45C  BDIFFM/AROUND BEND/JUDGING EXP. DATA                                                             153 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 80 M4-Q6      BSPM46   BSPM/AROUND BEND/FIND A RULE      10     minimally correct                                   154-155 / C 2.0
+                                                          11     "
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          30     complete resp.
+                                                          39     other compl. resp
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 81 M4-Q6      BRPM46   BRELM/AROUND BEND/FIND A RULE     10     minimally correct                                   156-157 / C 2.0
+                                                          11     "
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          30     complete resp.
+                                                          39     other compl. resp
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 82 M4-Q6      BIPM46   BDIFFM/AROUND BEND/FIND A RULE     0     identical codes                                         158 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 83 M5-Q1      BSPM51   BSPM/PACKAGING/DRAWING BOX WITH 4 BALLS                                                      159-160 / C 2.0
+                                                          10     minimally correct
+                                                          11     "
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          21     "
+                                                          30     complete resp.
+                                                          31     "
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 84 M5-Q1      BRPM51   BRELM/PACKAGING/DRAWING BOX WITH 4 BALLS                                                     161-162 / C 2.0
+                                                          10     minimally correct
+                                                          11     "
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          21     "
+                                                          30     complete resp.
+                                                          31     "
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 85 M5-Q1      BIPM51   BDIFFM/PACKAGING/DRAWING BOX W. 4 BALLS                                                          163 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 86 M5-Q2      BSPM52   BSPM/PACKAGING/DRAWING THE NET    10     part. correct                                       164-165 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 87 M5-Q2      BRPM52   BRELM/PACKAGING/DRAWING THE NET   10     part. correct                                       166-167 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 88 M5-Q2      BIPM52   BDIFFM/PACKAGING/DRAWING THE NET   0     identical codes                                         168 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 89 M5-Q3      BSPM53   BSPM/PACKAGING/CHOOSE ONE BOX     10     part. correct                                       169-170 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 90 M5-Q3      BRPM53   BRELM/PACKAGING/CHOOSE ONE BOX    10     part. correct                                       171-172 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 91 M5-Q3      BIPM53   BDIFFM/PACKAGING/CHOOSE ONE BOX    0     identical codes                                         173 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 92 S1-Q1A     BSPS11A  BSPS/PULSE/QUALITY DATA PRESENTATION                                                         174-175 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 93 S1-Q1A     BRPS11A  BRELS/PULSE/QUALITY DATA PRESENTATION                                                        176-177 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 94 S1-Q1A     BIPS11A  BDIFFS/PULSE/QUALITY DATA PRESENTATION                                                           178 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 95 S1-Q1B     BSPS11B  BSPS/PULSE/GATHERING DATA         10     minimally corr.                                     179-180 / C 2.0
+                                                          11     "
+                                                          12     "
+                                                          19     other mini. corr
+                                                          20     part. corr.
+                                                          29     other part corr.
+                                                          30     complete
+                                                          31     "
+                                                          39     other complete
+                                                          70     incorrect
+                                                          71     "
+                                                          79     other incorrect
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 96 S1-Q1B     BRPS11B  BRELS/PULSE/GATHERING DATA        10     minimally corr.                                     181-182 / C 2.0
+                                                          11     "
+                                                          12     "
+                                                          19     other mini. corr
+                                                          20     part. corr.
+                                                          29     other part corr.
+                                                          30     complete
+                                                          31     "
+                                                          39     other complete
+                                                          70     incorrect
+                                                          71     "
+                                                          79     other incorrect
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 97 S1-Q1B     BIPS11B  BDIFFS/PULSE/GATHERING DATA        0     identical codes                                         183 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+ 98 S1-Q2      BSPS12   BSPS/PULSE/PULSE AFTER CLIMBING   10     part. correct                                       184-185 / C 2.0
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 99 S1-Q2      BRPS12   BRELS/PULSE/PULSE AFTER CLIMBING  10     part. correct                                       186-187 / C 2.0
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+100 S1-Q2      BIPS12   BDIFFS/PULSE/PULSE AFTER CLIMBING  0     identical codes                                         188 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+101 S1-Q3      BSPS13   BSPS/PULSE/WHY DID PULSE CHANGE   10     min. correct                                        189-190 / C 2.0
+                                                          11     "
+                                                          19     other mini. corr
+                                                          20     part. corr.
+                                                          21     "
+                                                          29     other part corr.
+                                                          30     complete
+                                                          39     other complete
+                                                          70     incorr. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+102 S1-Q3      BRPS13   BRELS/PULSE/WHY DID PULSE CHANGE  10     min. correct                                        191-192 / C 2.0
+                                                          11     "
+                                                          19     other mini. corr
+                                                          20     part. corr.
+                                                          21     "
+                                                          29     other part corr.
+                                                          30     complete
+                                                          39     other complete
+                                                          70     incorr. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+103 S1-Q3      BIPS13   BDIFFS/PULSE/WHY DID PULSE CHANGE  0     identical codes                                         193 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+104 S2-Q1      BSPS21   BSPS/MAGNETS/FIND STRONGER MAGNET 10     complete Response                                   194-195 / C 2.0
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+105 S2-Q1      BRPS21   BRELS/MAGNETS/FIND STRONGER MAGNET                                                           196-197 / C 2.0
+                                                          10     complete Response
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+106 S2-Q1      BIPS21   BDIFFS/MAGNETS/FIND STRONGER MAGNET                                                              198 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+107 S2-Q2A     BSPS22A  BSPS/MAGNETS/A-WAY FIND STRONGER MAGNET                                                      199-200 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          14     "
+                                                          15     "
+                                                          16     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+108 S2-Q2A     BRPS22A  BRELS/MAGNETS/A-WAY FIND STRONGER MAGNET                                                     201-202 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          14     "
+                                                          15     "
+                                                          16     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+109 S2-Q2A     BIPS22A  BDIFFS/MAGNETS/A-WAY FIND STRONG. MAGNET                                                         203 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+110 S2-Q2B     BSPS22B  BSPS/MAGNETS/B-WAYS FIND STRONGER MAGNET                                                     204-205 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          14     "
+                                                          15     "
+                                                          16     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+111 S2-Q2B     BRPS22B  BRELS/MAGNETS/B-WAYS FIND STR. MAGNET                                                        206-207 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          14     "
+                                                          15     "
+                                                          16     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+112 S2-Q2B     BIPS22B  BDIFFS/MAGNETS/B-WAYS FIND STR. MAGNET                                                           208 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+113 S2-Q2C     BSPS22C  BSPS/MAGNETS/C-WAYS FIND STR. MAGNET                                                         209-210 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          14     "
+                                                          15     "
+                                                          16     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+114 S2-Q2C     BRPS22C  BRELS/MAGNETS/C-WAYS FIND STR. MAGNET                                                        211-212 / C 2.0
+                                                          10     complete Response
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          14     "
+                                                          15     "
+                                                          16     "
+                                                          19     other complete resp.
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+115 S2-Q2C     BIPS22C  BDIFFS/MAGNETS/C-WAYS FIND STR. MAGNET                                                           213 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+116 S3-Q1      BSPS31   BSPS/BATTERIES/TEST GOOD VS WORN OUT                                                         214-215 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+117 S3-Q1      BRPS31   BRELS/BATTERIES/TEST GOOD VS WORN OUT                                                        216-217 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+118 S3-Q1      BIPS31   BDIFFS/BATTERIES/TEST GOOD VS WORN OUT                                                           218 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+119 S3-Q2      BSPS32   BSPS/BATTERIES/DECIDE GOOD VS WORN OUT                                                       219-220 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+120 S3-Q2      BRPS32   BRELS/BATTERIES/DECIDE GOOD VS WORN OUT                                                      221-222 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+121 S3-Q2      BIPS32   BDIFFS/BATTERIES/DECIDE GOOD VS WORN OUT                                                         223 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+122 S3-Q3      BSPS33   BSPS/BATTERIES/BATTERIES IN FLASHLIGHT                                                       224-225 / C 2.0
+                                                          10     complete Response
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+123 S3-Q3      BRPS33   BRELS/BATTERIES/BATTERIES IN FLASHLIGHT                                                      226-227 / C 2.0
+                                                          10     complete Response
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+124 S3-Q3      BIPS33   BDIFFS/BATTERIES/BATTERIES IN FLASHLIGHT                                                         228 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+125 S3-Q4      BSPS34   BSPS/BATTERIES/BEST WAY PUT BATTERIES                                                        229-230 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          14     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+126 S3-Q4      BRPS34   BRELS/BATTERIES/BEST WAY PUT BATTERIES                                                       231-232 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          13     "
+                                                          14     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+127 S3-Q4      BIPS34   BDIFFS/BATTERIES/BEST WAY PUT BATTERIES                                                          233 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+128 S4-Q1A     BSPS41A  BSPS/RUBBER BAND/DATA PRESENTATION                                                           234-235 / C 2.0
+                                                          10     part. complete response
+                                                          11     "
+                                                          19     "
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incorr. resp
+                                                          71     "
+                                                          79     other incorr.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+129 S4-Q1A     BRPS41A  BRELS/RUBBER BAND/DATA PRESENTATION                                                          236-237 / C 2.0
+                                                          10     part. complete response
+                                                          11     "
+                                                          19     "
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incorr. resp
+                                                          71     "
+                                                          79     other incorr.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+130 S4-Q1A     BIPS41A  BDIFFS/RUBBER BAND/DATA PRESENTATION                                                             238 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+131 S4-Q1B     BSPS41B  BSPS/RUBBER BAND/DATA GATHERING   10     minimally correct                                   239-240 / C 2.0
+                                                          11     "
+                                                          12     "
+                                                          19     other mini. corr.
+                                                          20     part. correct
+                                                          21     "
+                                                          29     other part corr.
+                                                          30     complete
+                                                          39     other complete
+                                                          70     incorrect
+                                                          79     other incorrect
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+132 S4-Q1B     BRPS41B  BRELS/RUBBER BAND/DATA GATHERING  10     minimally correct                                   241-242 / C 2.0
+                                                          11     "
+                                                          12     "
+                                                          19     other mini. corr.
+                                                          20     part. correct
+                                                          21     "
+                                                          29     other part corr.
+                                                          30     complete
+                                                          39     other complete
+                                                          70     incorrect
+                                                          79     other incorrect
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+133 S4-Q1B     BIPS41B  BDIFFS/RUBBER BAND/DATA GATHERING  0     identical codes                                         243 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+134 S4-Q2      BSPS42   BSPS/RUBBER BAND/GRAPH RESULTS    10     minimally correct                                   244-245 / C 2.0
+                                                          19     other mini. corr.
+                                                          20     partially correct
+                                                          21     "
+                                                          22     "
+                                                          23     "
+                                                          29     other part. corr.
+                                                          30     complete
+                                                          70     incorrect
+                                                          71     "
+                                                          79     other incorrect
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+135 S4-Q2      BRPS42   BRELS/RUBBER BAND/GRAPH RESULTS   10     minimally correct                                   246-247 / C 2.0
+                                                          19     other mini. corr.
+                                                          20     partially correct
+                                                          21     "
+                                                          22     "
+                                                          23     "
+                                                          29     other part. corr.
+                                                          30     complete
+                                                          70     incorrect
+                                                          71     "
+                                                          79     other incorrect
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+136 S4-Q2      BIPS42   BDIFFS/RUBBER BAND/GRAPH RESULTS   0     identical codes                                         248 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+137 S4-Q3      BSPS43   BSPS/RUBBER BAND/BECOME LONGER    10     part. correct                                       249-250 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+138 S4-Q3      BRPS43   BRELS/RUBBER BAND/BECOME LONGER   10     part. correct                                       251-252 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+139 S4-Q3      BIPS43   BDIFFS/RUBBER BAND/BECOME LONGER   0     identical codes                                         253 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+140 S4-Q4      BSPS44   BSPS/RUBBER BAND/DESCRIPTION OF CHANGES                                                      254-255 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+141 S4-Q4      BRPS44   BRELS/RUBBER BAND/DESCRIPTION OF CHANGES                                                     256-257 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+142 S4-Q4      BIPS44   BDIFFS/RUBBER BAND/DESCRIPTION OF CHANGE                                                         258 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+143 S4-Q5      BSPS45   BSPS/RUBBER BAND/WITH 2 MORE RINGS                                                           259-260 / C 2.0
+                                                          10     complete Response
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+144 S4-Q5      BRPS45   BRELS/RUBBER BAND/WITH 2 MORE RINGS                                                          261-262 / C 2.0
+                                                          10     complete Response
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+145 S4-Q5      BIPS45   BDIFFS/RUBBER BAND/WITH 2 MORE RINGS                                                             263 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+146 S4-Q6      BSPS46   BSPS/RUBBER BAND/THIS HAPPENS WHY 10     part. correct                                       264-265 / C 2.0
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+147 S4-Q6      BRPS46   BRELS/RUBBER BAND/THIS HAPPENS WHY                                                           266-267 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+148 S4-Q6      BIPS46   BDIFFS/RUBBER BAND/THIS HAPPENS WHY                                                              268 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+149 S5-Q1      BSPS51   BSPS/TEMPERATURE/PLAN             10     part. correct                                       269-270 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+150 S5-Q1      BRPS51   BRELS/TEMPERATURE/PLAN            10     part. correct                                       271-272 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+151 S5-Q1      BIPS51   BDIFFS/TEMPERATURE/PLAN            0     identical codes                                         273 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+152 S5-Q2A     BSPS52A  BSPS/TEMPERATURE/THERMOMETER USE  10     complete Response                                   274-275 / C 2.0
+                                                          70     incor. resp.
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+153 S5-Q2A     BRPS52A  BRELS/TEMPERATURE/THERMOMETER USE 10     complete Response                                   276-277 / C 2.0
+                                                          70     incor. resp.
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+154 S5-Q2A     BIPS52A  BDIFFS/TEMPERATURE/THERMOMETER USE 0     identical codes                                         278 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+155 S5-Q2B     BSPS52B  BSPS/TEMPERATURE/QUALITY OF PRESENTATION                                                     279-280 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+156 S5-Q2B     BRPS52B  BRELS/TEMPERATURE/QUALITY OF PRESENT.                                                        281-282 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+157 S5-Q2B     BIPS52B  BDIFFS/TEMPERATURE/QUALITY OF PRESENT.                                                           283 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+158 S5-Q2C     BSPS52C  BSPS/TEMPERATURE/GATHERING DATA   10     minimally correct                                   284-285 / C 2.0
+                                                          11     "
+                                                          12     "
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          30     complete resp.
+                                                          31     "
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+159 S5-Q2C     BRPS52C  BRELS/TEMPERATURE/GATHERING DATA  10     minimally correct                                   286-287 / C 2.0
+                                                          11     "
+                                                          12     "
+                                                          19     other mini. corr
+                                                          20     partially corr.
+                                                          30     complete resp.
+                                                          31     "
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+160 S5-Q2C     BIPS52C  BDIFFS/TEMPERATURE/GATHERING DATA  0     identical codes                                         288 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+161 S5-Q3      BSPS53   BSPS/TEMPERATURE/EFFECT ON SPEED  10     part. correct                                       289-290 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+162 S5-Q3      BRPS53   BRELS/TEMPERATURE/EFFECT ON SPEED 10     part. correct                                       291-292 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+163 S5-Q3      BIPS53   BDIFFS/TEMPERATURE/EFFECT ON SPEED 0     identical codes                                         293 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+164 S5-Q4      BSPS54   BSPS/TEMPERATURE/EXPLANATION FOR EFFECTS                                                     294-295 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+165 S5-Q4      BRPS54   BRELS/TEMPERATURE/EXPLANATION F. EFFECTS                                                     296-297 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+166 S5-Q4      BIPS54   BDIFFS/TEMPERATURE/EXPLANATION F.EFFECTS                                                         298 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+167 S5-Q5      BSPS55   BSPS/TEMPERATURE/CHANGES IN PLAN  10     part. correct                                       299-300 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+168 S5-Q5      BRPS55   BRELS/TEMPERATURE/CHANGES IN PLAN 10     part. correct                                       301-302 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+169 S5-Q5      BIPS55   BDIFFS/TEMPERATURE/CHANGES IN PLAN 0     identical codes                                         303 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+170 SM1-Q1     BSPG11   BSPG/SHADOWS/SIZE MOVING CLOSER   10     part. correct                                       304-305 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+171 SM1-Q1     BRPG11   BRELG/SHADOWS/SIZE MOVING CLOSER  10     part. correct                                       306-307 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+172 SM1-Q1     BIPG11   BDIFFG/SHADOWS/SIZE MOVING CLOSER  0     identical codes                                         308 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+173 SM1-Q2     BSPG12   BSPG/SHADOWS/WHY IS SHADOW LARGER CARD                                                       309-310 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+174 SM1-Q2     BRPG12   BRELG/SHADOWS/WHY IS SHADOW LARGER CARD                                                      311-312 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+175 SM1-Q2     BIPG12   BDIFFG/SHADOWS/WHY IS SHADOW LARGER CARD                                                         313 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+176 SM1-Q3     BSPG13   BSPG/SHADOWS/FIND 3 MORE POSITIONS                                                           314-315 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+177 SM1-Q3     BRPG13   BRELG/SHADOWS/FIND 3 MORE POSITIONS                                                          316-317 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          12     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+178 SM1-Q3     BIPG13   BDIFFG/SHADOWS/FIND 3 MORE POSITIONS                                                             318 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+179 SM1-Q4     BSPG14   BSPG/SHADOWS/DESCRIBE INVESTIGATION                                                          319-320 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+180 SM1-Q4     BRPG14   BRELG/SHADOWS/DESCRIBE INVESTIGATION                                                         321-322 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+181 SM1-Q4     BIPG14   BDIFFG/SHADOWS/DESCRIBE INVESTIGATION                                                            323 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+182 SM1-Q5     BSPG15   BSPG/SHADOWS/PRESENT MEASUREMENTS 10     part. correct                                       324-325 / C 2.0
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+183 SM1-Q5     BRPG15   BRELG/SHADOWS/PRESENT MEASUREMENTS                                                           326-327 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+184 SM1-Q5     BIPG15   BDIFFG/SHADOWS/PRESENT MEASUREMENTS                                                              328 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+185 SM1-Q6     BSPG16   BSPG/SHADOWS/GENERAL CONCLUSIONS  10     part. correct                                       329-330 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+186 SM1-Q6     BRPG16   BRELG/SHADOWS/GENERAL CONCLUSIONS 10     part. correct                                       331-332 / C 2.0
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          71     "
+                                                          72     "
+                                                          73     "
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+187 SM1-Q6     BIPG16   BDIFFG/SHADOWS/GENERAL CONCLUSIONS 0     identical codes                                         333 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+188 SM2-Q1A    BSPG21A  BSPG/PLASTICINE/MAKE A 20 G LUMP  10     complete Response                                   334-335 / C 2.0
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+189 SM2-Q1A    BRPG21A  BRELG/PLASTICINE/MAKE A 20 G LUMP 10     complete Response                                   336-337 / C 2.0
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+190 SM2-Q1A    BIPG21A  BDIFFG/PLASTICINE/MAKE A 20 G LUMP 0     identical codes                                         338 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+191 SM2-Q1B    BSPG21B  BSPG/PLASTICINE/HOW TO MAKE A 20 G LUMP                                                      339-340 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+192 SM2-Q1B    BRPG21B  BRELG/PLASTICINE/HOW TO MAKE A 20 G LUMP                                                     341-342 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+193 SM2-Q1B    BIPG21B  BDIFFG/PLASTICINE/HOW TO MAKE A 20G LUMP                                                         343 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+194 SM2-Q2A    BSPG22A  BSPG/PLASTICINE/MAKE A 10 G LUMP  10     part. correct                                       344-345 / C 2.0
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+195 SM2-Q2A    BRPG22A  BRELG/PLASTICINE/MAKE A 10 G LUMP 10     part. correct                                       346-347 / C 2.0
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+196 SM2-Q2A    BIPG22A  BDIFFG/PLASTICINE/MAKE A 10 G LUMP 0     identical codes                                         348 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+197 SM2-Q2B    BSPG22B  BSPG/PLASTICINE/HOW TO MAKE A 10 G LUMP                                                      349-350 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+198 SM2-Q2B    BRPG22B  BRELG/PLASTICINE/HOW TO MAKE A 10 G LUMP                                                     351-352 / C 2.0
+                                                          10     part. correct
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+199 SM2-Q2B    BIPG22B  BDIFFG/PLASTICINE/HOW TO MAKE A 10G LUMP                                                         353 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+200 SM2-Q3A    BSPG23A  BSPG/PLASTICINE/MAKE A 15 G LUMP  10     complete Response                                   354-355 / C 2.0
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+201 SM2-Q3A    BRPG23A  BRELG/PLASTICINE/MAKE A 15 G LUMP 10     complete Response                                   356-357 / C 2.0
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+202 SM2-Q3A    BIPG23A  BDIFFG/PLASTICINE/MAKE A 15 G LUMP 0     identical codes                                         358 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+203 SM2-Q3B    BSPG23B  BSPG/PLASTICINE/HOW TO MAKE A 15 G LUMP                                                      359-360 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+204 SM2-Q3B    BRPG23B  BRELG/PLASTICINE/HOW TO MAKE A 15 G LUMP                                                     361-362 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+205 SM2-Q3B    BIPG23B  BDIFFG/PLASTICINE/HOW TO MAKE A 15G LUMP                                                         363 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+206 SM2-Q4A    BSPG24A  BSPG/PLASTICINE/MAKE A 35 G LUMP  10     part. correct                                       364-365 / C 2.0
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+207 SM2-Q4A    BRPG24A  BRELG/PLASTICINE/MAKE A 35 G LUMP 10     part. correct                                       366-367 / C 2.0
+                                                          20     complete resp.
+                                                          70     incor. resp.
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+208 SM2-Q4A    BIPG24A  BDIFFG/PLASTICINE/MAKE A 35 G LUMP 0     identical codes                                         368 / C 1.0
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+209 SM2-Q4B    BSPG24B  BSPG/PLASTICINE/HOW TO MAKE A 35 G LUMP                                                      369-370 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+210 SM2-Q4B    BRPG24B  BRELG/PLASTICINE/HOW TO MAKE A 35 G LUMP                                                     371-372 / C 2.0
+                                                          10     part. correct
+                                                          11     "
+                                                          19     other part. corr.
+                                                          20     complete resp.
+                                                          21     "
+                                                          22     "
+                                                          29     other complete
+                                                          70     incor. resp.
+                                                          76     "
+                                                          79     other incorr. resp.
+                                                          90     crossed out,...
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+211 SM2-Q4B    BIPG24B  BDIFFG/PLASTICINE/HOW TO MAKE A 35G LUMP                                                         373 / C 1.0
+                                                           0     identical codes
+                                                           1     identical score, but different reasoning
+                                                           2     different score
+                                                           8     not administered
+------------------------------------------------------------------------------------------------------------------------------------
+212 SYSTEM     DPCDATE  *FILE CREATION DATE AT DPC HAMBURG*                                                          374-379 / N 6.0
+                                                      MMDDYY     File Creation Date
+--- END OF CODEBOOK ----------------------------------------------------------------------------------------------------------------
+				BSQCODE.CDT
+

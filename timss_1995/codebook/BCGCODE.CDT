@@ -1,0 +1,1737 @@
+Codebook, Date:  24.09.97  File: bcgcode.SDB
+
+Var.Question             Variable Label                 Code     Option                                              Location/Format
+No.                      Name
+------------------------------------------------------------------------------------------------------------------------------------
+  1 VERSION              VERSION  *FILE VERSION*       VALUE     Version number                                          1-2 / C 2.0
+------------------------------------------------------------------------------------------------------------------------------------
+  2 COUNTRY              IDCNTRY  *COUNTRY ID*         VALUE     Country ID                                              3-5 / N 3.0
+------------------------------------------------------------------------------------------------------------------------------------
+  3 POPULATION           IDPOP    *POPULATION ID*          1     population 1                                              6 / C 1.0
+                                                           2     population 2
+                                                           3     population 3
+------------------------------------------------------------------------------------------------------------------------------------
+  4 STRATUM              IDSTRAT  *STRATUM ID*         VALUE     Stratum ID                                              7-9 / N 3.0
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+  5 SCHOOL               IDSCHOOL *SCHOOL ID*          VALUE     School ID                                             10-15 / N 6.0
+------------------------------------------------------------------------------------------------------------------------------------
+  6 REPLACED             ILREPLAC *SCHOOL CURRENT SCHOOL REPLACED*                                                     16-21 / N 6.0
+                                                       VALUE     Replaced school
+                                                      999999     missing
+                                                      999998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+  7 REPLACED             ITREPLAC *SCHOOL REPLACEMENT STATUS INDICATOR*                                                   22 / C 1.0
+                                                           0     original sampled school
+                                                           1     1st replacement school
+                                                           2     2nd replacement school
+------------------------------------------------------------------------------------------------------------------------------------
+  8 IDGRADE              IDGRADER *GRADE INDICATOR*        1     lower grade school only                                  23 / C 1.0
+                                                           2     upper grade school only
+                                                           3     both grade school
+------------------------------------------------------------------------------------------------------------------------------------
+  9 ITPART               ITPART   *SCHOOL PARTICIPATION INDICATOR*                                                        24 / C 1.0
+                                                           1     school did not participate
+                                                           2     school did not participated and is not replaced
+                                                           3     school participated and Quest. returned
+                                                           4     school participated, questionnaire not returned
+                                                           5     school removed from sample
+------------------------------------------------------------------------------------------------------------------------------------
+ 10 SCQ2-1               BCBGCOMM GEN\TYPE OF COMMUNITY    1     a geographically isolated area                           25 / C 1.0
+                                                           2     village or rural (farm) area
+                                                           3     one on the outskirts of a town/city
+                                                           4     one close to the center of a town/city
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 11 SCQ2-2A              BCBGGRPK GEN\GRADE LEVELS\PRE-KINDERGARTEN                                                       26 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 12 SCQ2-2B              BCBGGRK  GEN\GRADE LEVELS\KINDERGARTEN                                                           27 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 13 SCQ2-2C              BCBGGR1  GEN\GRADE LEVELS\GRADE 1 1     yes                                                      28 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 14 SCQ2-2D              BCBGGR2  GEN\GRADE LEVELS\GRADE 2 1     yes                                                      29 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 15 SCQ2-2E              BCBGGR3  GEN\GRADE LEVELS\GRADE 3 1     yes                                                      30 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 16 SCQ2-2F              BCBGGR4  GEN\GRADE LEVELS\GRADE 4 1     yes                                                      31 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 17 SCQ2-2G              BCBGGR5  GEN\GRADE LEVELS\GRADE 5 1     yes                                                      32 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 18 SCQ2-2H              BCBGGR6  GEN\GRADE LEVELS\GRADE 6 1     yes                                                      33 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 19 SCQ2-2I              BCBGGR7  GEN\GRADE LEVELS\GRADE 7 1     yes                                                      34 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 20 SCQ2-2J              BCBGGR8  GEN\GRADE LEVELS\GRADE 8 1     yes                                                      35 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 21 SCQ2-2K              BCBGGR9  GEN\GRADE LEVELS\GRADE 9 1     yes                                                      36 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 22 SCQ2-2L              BCBGGR10 GEN\GRADE LEVELS\GRADE 10                                                               37 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 23 SCQ2-2M              BCBGGR11 GEN\GRADE LEVELS\GRADE 11                                                               38 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 24 SCQ2-2N              BCBGGR12 GEN\GRADE LEVELS\GRADE 12                                                               39 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 25 SCQ2-2O              BCBGGR13 GEN\GRADE LEVELS\GRADE 13                                                               40 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 26 SCQ2-3A              BCBGFTE1 GEN\STAFF\PRINCIPALS VALUE     number of FTEs                                        41-44 / N 4.1
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 27 SCQ2-3B              BCBGFTE2 GEN\STAFF\ASSISTANT PRINCIPALS                                                       45-48 / N 4.1
+                                                       VALUE     number of FTEs
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 28 SCQ2-3C              BCBGFTE3 GEN\STAFF\DEPARTMENT HEADS                                                           49-52 / N 4.1
+                                                       VALUE     number of FTEs
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 29 SCQ2-3D              BCBGFTE4 GEN\STAFF\CLASSROOM TEACHERS                                                         53-57 / N 5.1
+                                                       VALUE     number of FTEs
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 30 SCQ2-3E              BCBGFTE5 GEN\STAFF\TEACHER AIDES                                                              58-62 / N 5.1
+                                                       VALUE     number of FTEs
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 31 SCQ2-3F              BCBGFTE6 GEN\STAFF\LABORATORY TECHNICIANS                                                     63-67 / N 5.1
+                                                       VALUE     number of FTEs
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 32 SCQ2-3G              BCBGFTE7 GEN\STAFF\LEARNING SPECIALISTS                                                       68-72 / N 5.1
+                                                       VALUE     number of FTEs
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 33 SCQ2-3H              BCBGFTE8 GEN\STAFF\OTHER PROFESSIONAL STAFF                                                   73-77 / N 5.1
+                                                       VALUE     number of FTEs
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 34 SCQ2-4A              BCBGFTTE GEN\NUMBER OF FULL-TIME TEACHERS                                                     78-80 / N 3.0
+                                                       VALUE     number of FT teachers
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 35 SCQ2-4B              BCBGPTTE GEN\NUMBER OF PART-TIME TEACHERS                                                     81-83 / N 3.0
+                                                       VALUE     number of PT teachers
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 36 SCQ2-5               BCBGTE5Y GEN\TEACHER AT SCHOOL FOR 5+ YEARS                                                   84-86 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 37 SCQ2-6A              BCBMTEAC MAT\%TEACHER\75%+ IN MATHEMATICS                                                     87-89 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 38 SCQ2-6B              BCBMNONE MAT\%TEACHER\NO MATHEMATICS                                                          90-92 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 39 SCQ2-6C              BCBSTEAC SCI\%TEACHER\75%+ IN SCIENCE                                                         93-95 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 40 SCQ2-6D              BCBSNONE SCI\%TEACHER\NO SCIENCE                                                              96-98 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 41 SCQ2-6E              BCBGTEAC GEN\%TEACHER\75%+ IN MATH+SCIENCE                                                   99-101 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 42 SCQ2-6F              BCBGNONE GEN\%TEACHER\NO MATH OR SCIENCE                                                    102-104 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 43 SCQ2-7               BCBGSAME GEN\TIME STUDENTS STAY WITH TEACHER                                                    105 / C 1.0
+                                                           1     one school year
+                                                           2     two school years
+                                                           3     three school years
+                                                           4     four or more school years
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 44 SCQ2-8A              BCBMRELW MAT\MATH RELATED WORK PER WEEK                                                     106-107 / N 2.0
+                                                       VALUE     hours/week
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 45 SCQ2-8B              BCBMTEAW MAT\TEACH MATH CLASSES PER WEEK                                                    108-109 / N 2.0
+                                                       VALUE     hours/week
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 46 SCQ2-9A              BCBSRELW SCI\SCIENCE RELATED WORK PER WEEK                                                  110-111 / N 2.0
+                                                       VALUE     hours/week
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 47 SCQ2-9B              BCBSTEAW SCI\TEACH SCIENCE CLASSES PER WEEK                                                 112-113 / N 2.0
+                                                       VALUE     hours/week
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 48 SCQ2-10A             BCBGCOL1 GEN\COOPERATION\OFFICIAL POLICY                                                        114 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 49 SCQ2-10B             BCBGCOL2 GEN\COOPERATION\ENCOURAGED                                                             115 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 50 SCQ2-10C             BCBGCOL3 GEN\COOPERATION\REGULAR MEETINGS                                                       116 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 51 SCQ2-11A             BCBGAC01 GEN\PRINCIPAL\HIRE TEACHERS                                                        117-119 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 52 SCQ2-11B             BCBGAC02 GEN\PRINCIPAL\REPRESENT\COMMUNITY                                                  120-122 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 53 SCQ2-11C             BCBGAC03 GEN\PRINCIPAL\REPRESENT\OFFCL MEETNG                                               123-125 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 54 SCQ2-11D             BCBGAC04 GEN\PRINCIPAL\INTERNAL ADMINISTRATN                                                126-128 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 55 SCQ2-11E             BCBGAC05 GEN\PRINCIPAL\TEACHING + PREPARATION                                               129-131 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 56 SCQ2-11F             BCBGAC06 GEN\PRINCIPAL\DEMONSTRATION LESSON                                                 132-134 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 57 SCQ2-11G             BCBGAC07 GEN\PRINCIPAL\DISCUSS WITH TEACHERS                                                135-137 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 58 SCQ2-11H             BCBGAC08 GEN\PRINCIPAL\CURRICULUM REVISION                                                  138-140 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 59 SCQ2-11I             BCBGAC09 GEN\PRINCIPAL\TALK WITH PARENTS                                                    141-143 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 60 SCQ2-11J             BCBGAC10 GEN\PRINCIPAL\COUNSELING STUDENTS                                                  144-146 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 61 SCQ2-11K             BCBGAC11 GEN\PRINCIPAL\RESPONDING TO REQUESTS                                               147-149 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 62 SCQ2-11L             BCBGAC12 GEN\PRINCIPAL\TRAIN TEACHERS                                                       150-152 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 63 SCQ2-11M             BCBGAC13 GEN\PRINCIPAL\PROFESSIONAL DEVELPMNT                                               153-155 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 64 SCQ2-11N             BCBGAC14 GEN\PRINCIPAL\OTHER ACTIVITIES                                                     156-158 / N 3.0
+                                                       VALUE     hours/month
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 65 SCQ2-12A             BCBGRP01 GEN\RESPONSIBLE\HIRE TEACHERS                                                          159 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 66 SCQ2-12B             BCBGRP02 GEN\RESPONSIBLE\DISCIPLINARY POLICY                                                    160 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 67 SCQ2-12C             BCBGRP03 GEN\RESPONSIBLE\GRADING POLICY                                                         161 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 68 SCQ2-12D             BCBGRP04 GEN\RESPONSIBLE\SCHOOL BUDGET                                                          162 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 69 SCQ2-12E             BCBGRP05 GEN\RESPONSIBLE\PURCHASE SUPPLIES                                                      163 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 70 SCQ2-12F             BCBGRP06 GEN\RESPONSIBLE\PLACE STUDENTS                                                         164 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 71 SCQ2-12G             BCBGRP07 GEN\RESPONSIBLE\ASSIGN TEACHERS                                                        165 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 72 SCQ2-12H             BCBGRP08 GEN\RESPONSIBLE\DETERMINE TEXTBOOKS                                                    166 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 73 SCQ2-12I             BCBGRP09 GEN\RESPONSIBLE\HOMEWORK POLICY                                                        167 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 74 SCQ2-12J             BCBGRP10 GEN\RESPONSIBLE\TEACHER SALARIES                                                       168 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 75 SCQ2-12K             BCBGRP11 GEN\RESPONSIBLE\COMMUNITY RELATIONS                                                    169 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 76 SCQ2-12L             BCBGRP12 GEN\RESPONSIBLE\STUDENTS' FAMILIES                                                     170 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 77 SCQ2-12M             BCBGRP13 GEN\RESPONSIBLE\COURSE CONTENT                                                         171 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 78 SCQ2-12N             BCBGRP14 GEN\RESPONSIBLE\COURSE OFFERINGS                                                       172 / C 1.0
+                                                           1     not a school responsibility
+                                                           2     <school's governing board>
+                                                           3     principal
+                                                           4     department head
+                                                           5     teachers
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 79 SCQ2-13A             BCBGIF01 GEN\INFLUENCE\NATIONAL COUNCIL                                                         173 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 80 SCQ2-13B             BCBGIF02 GEN\INFLUENCE\NATIONAL ASSOCIATION                                                     174 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 81 SCQ2-13C             BCBGIF03 GEN\INFLUENCE\EDUCATIONAL REGION                                                       175 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 82 SCQ2-13D             BCBGIF04 GEN\INFLUENCE\SCHOOL GOVERNING BOARD                                                   176 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 83 SCQ2-13E             BCBGIF05 GEN\INFLUENCE\PRINCIPAL OR HEAD                                                        177 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 84 SCQ2-13F             BCBGIF06 GEN\INFLUENCE\SCHOOL TEACHERS                                                          178 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 85 SCQ2-13G             BCBGIF07 GEN\INFLUENCE\SUBJECT TEACHERS                                                         179 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 86 SCQ2-13H             BCBGIF08 GEN\INFLUENCE\TEACHER INDIVIDUALLY                                                     180 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 87 SCQ2-13I             BCBGIF09 GEN\INFLUENCE\PARENTS    1     none                                                    181 / C 1.0
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 88 SCQ2-13J             BCBGIF10 GEN\INFLUENCE\STUDENTS   1     none                                                    182 / C 1.0
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 89 SCQ2-13K             BCBGIF11 GEN\INFLUENCE\RELIGIOUS GROUPS                                                         183 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 90 SCQ2-13L             BCBGIF12 GEN\INFLUENCE\BUSINESS COMMUNITY                                                       184 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 91 SCQ2-13M             BCBGIF13 GEN\INFLUENCE\TEXTBOOK PUBLISHERS                                                      185 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 92 SCQ2-13N             BCBGIF14 GEN\INFLUENCE\EXTERNAL EXAMS                                                           186 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 93 SCQ2-13O             BCBGIF15 GEN\INFLUENCE\TEACHER UNIONS                                                           187 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 94 SCQ2-14A             BCBMCURR MAT\OWN SCHOOL CURRICULUM CONTENT                                                      188 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 95 SCQ2-14B             BCBSCURR SCI\OWN SCHOOL CURRICULUM CONTENT                                                      189 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 96 SCQ2-15A             BCBGCOM1 GEN\COMPUTERS\AVAILABLE                                                            190-192 / N 3.0
+                                                       VALUE     number of computers
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 97 SCQ2-15B             BCBGCOM2 GEN\COMPUTERS\TEACHER\ADMINISTRATION                                               193-195 / N 3.0
+                                                       VALUE     number of computers
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 98 SCQ2-15C             BCBGCOM3 GEN\COMPUTERS\TEACHER\INSTRUCTION                                                  196-198 / N 3.0
+                                                       VALUE     number of computers
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+ 99 SCQ2-15D             BCBGCOM4 GEN\COMPUTERS\STUDENT\EDUCATIONAL                                                  199-201 / N 3.0
+                                                       VALUE     number of computers
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+100 SCQ2-15E             BCBGCOM5 GEN\COMPUTERS\STAFF\SCHOOL RECORD                                                  202-204 / N 3.0
+                                                       VALUE     number of computers
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+101 SCQ2-16A             BCBGST01 GEN\SHORTAGE\INSTRUCTIONAL MATERIALS                                                   205 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+102 SCQ2-16B             BCBGST02 GEN\SHORTAGE\BUDGET FOR SUPPLIES                                                       206 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+103 SCQ2-16C             BCBGST03 GEN\SHORTAGE\SCHOOL BUILDINGS                                                          207 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+104 SCQ2-16D             BCBGST04 GEN\SHORTAGE\HEATING AND LIGHTING                                                      208 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+105 SCQ2-16E             BCBGST05 GEN\SHORTAGE\INSTRUCTIONAL SPACE                                                       209 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+106 SCQ2-16F             BCBGST06 GEN\SHORTAGE\HANDICAPPED FACILITIES                                                    210 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+107 SCQ2-16G             BCBMST07 MAT\SHORTAGE\COMPUTER HARDWARE                                                         211 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+108 SCQ2-16H             BCBMST08 MAT\SHORTAGE\COMPUTER SOFTWARE                                                         212 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+109 SCQ2-16I             BCBMST09 MAT\SHORTAGE\CALCULATORS 1     none                                                    213 / C 1.0
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+110 SCQ2-16J             BCBMST10 MAT\SHORTAGE\LIBRARY MATERIALS                                                         214 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+111 SCQ2-16K             BCBMST11 MAT\SHORTAGE\AUDIO-VISUAL RESOURCES                                                    215 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+112 SCQ2-16L             BCBSST12 SCI\SHORTAGE\LABORATORY EQUIPMENT                                                      216 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+113 SCQ2-16M             BCBSST13 SCI\SHORTAGE\COMPUTER HARDWARE                                                         217 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+114 SCQ2-16N             BCBSST14 SCI\SHORTAGE\COMPUTER SOFTWARE                                                         218 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+115 SCQ2-16O             BCBSST15 SCI\SHORTAGE\CALCULATORS 1     none                                                    219 / C 1.0
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+116 SCQ2-16P             BCBSST16 SCI\SHORTAGE\LIBRARY MATERIALS                                                         220 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+117 SCQ2-16Q             BCBSST17 SCI\SHORTAGE\AUDIO-VISUAL RESOURCES                                                    221 / C 1.0
+                                                           1     none
+                                                           2     a little
+                                                           3     some
+                                                           4     a lot
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+118 SCQ2-17A1            BCBGBENR GEN\TOTAL SCHOOL ENROLLMENT\BOYS                                                   222-225 / N 4.0
+                                                       VALUE     number of boys
+                                                        9999     missing
+                                                        9998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+119 SCQ2-17A2            BCBGGENR GEN\TOTAL SCHOOL\ENROLLMENT\GIRLS                                                  226-229 / N 4.0
+                                                       VALUE     number of girls
+                                                        9999     missing
+                                                        9998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+120 SCQ2-17B             BCBGABST GEN\STUDENT\% ABSENT VALUE     percentage                                          230-232 / N 3.0
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+121 SCQ2-17C             BCBGENDY GEN\STUDENT\% FINISHING SCHOOL YEAR                                                233-235 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+122 SCQ2-17D             BCBGTNSF GEN\STUDENT\% TRANSFERRING INTO SCHL                                               236-238 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+123 SCQ2-17E1            BCBGLBER GEN\L-GRADE\ENROLLMENT\BOYS                                                        239-241 / N 3.0
+                                                       VALUE     number of boys
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+124 SCQ2-17E2            BCBGLGER GEN\L-GRADE\ENROLLMENT\GIRLS                                                       242-244 / N 3.0
+                                                       VALUE     number of girls
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+125 SCQ2-17F1            BCBGLBRT GEN\L-GRADE\REPEATING GRADE\BOYS                                                   245-247 / N 3.0
+                                                       VALUE     number of boys
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+126 SCQ2-17F2            BCBGLGRT GEN\L-GRADE\REPEATING GRADE\GIRLS                                                  248-250 / N 3.0
+                                                       VALUE     number of girls
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+127 SCQ2-17G             BCBGLSIZ GEN\L-GRADE\AVERAGE CLASS SIZE                                                     251-253 / N 3.0
+                                                       VALUE     class size
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+128 SCQ2-17H             BCBGLMGR GEN\L-GRADE\# IN MULTI-GRADE CLASSRM                                               254-256 / N 3.0
+                                                       VALUE     number of students
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+129 SCQ2-17I1            BCBMLBER MAT\L-GRADE\# STUDYING MATH\BOYS                                                   257-259 / N 3.0
+                                                       VALUE     number of boys
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+130 SCQ2-17I2            BCBMLGER MAT\L-GRADE\# STUDYING MATH\GIRLS                                                  260-262 / N 3.0
+                                                       VALUE     number of girls
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+131 SCQ2-17J1            BCBSLBER SCI\L-GRADE\# STUDYING SCIENCE\BOYS                                                263-265 / N 3.0
+                                                       VALUE     number of boys
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+132 SCQ2-17J2            BCBSLGER SCI\L-GRADE\# STUDYING SCIENCE\GIRLS                                               266-268 / N 3.0
+                                                       VALUE     number of girls
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+133 SCQ2-17K1            BCBGUBER GEN\U-GRADE\ENROLLMENT\BOYS                                                        269-271 / N 3.0
+                                                       VALUE     number of boys
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+134 SCQ2-17K2            BCBGUGER GEN\U-GRADE\ENROLLMENT\GIRLS                                                       272-274 / N 3.0
+                                                       VALUE     number of girls
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+135 SCQ2-17L1            BCBGUBRT GEN\U-GRADE\REPEATING GRADE\BOYS                                                   275-277 / N 3.0
+                                                       VALUE     number of boys
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+136 SCQ2-17L2            BCBGUGRT GEN\U-GRADE\REPEATING GRADE\GIRLS                                                  278-280 / N 3.0
+                                                       VALUE     number of girls
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+137 SCQ2-17M             BCBGUSIZ GEN\U-GRADE\AVERAGE CLASS SIZE                                                     281-283 / N 3.0
+                                                       VALUE     class size
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+138 SCQ2-17N             BCBGUMGR GEN\U-GRADE\# IN MULTI-GRADE CLASSRM                                               284-286 / N 3.0
+                                                       VALUE     number of students
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+139 SCQ2-17O1            BCBMUBER MAT\U-GRADE\# STUDYING MATH\BOYS                                                   287-289 / N 3.0
+                                                       VALUE     number of boys
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+140 SCQ2-17O2            BCBMUGER MAT\U-GRADE\# STUDYING MATH\GIRLS                                                  290-292 / N 3.0
+                                                       VALUE     number of girls
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+141 SCQ2-17P1            BCBSUBER SCI\U-GRADE\# STUDYING SCIENCE\BOYS                                                293-295 / N 3.0
+                                                       VALUE     number of boys
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+142 SCQ2-17P2            BCBSUGER SCI\U-GRADE\# STUDYING SCIENCE\GIRLS                                               296-298 / N 3.0
+                                                       VALUE     number of girls
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+143 SCQ2-18A1            BCBGUO01 GEN\BEHAVIOR\ARRIVE LATE AT SCHOOL                                                     299 / C 1.0
+                                                           1     rarely
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+144 SCQ2-18A2            BCBGUP01 GEN\BEHAVIOR\% ARRIVE LATE AT SCHOOL                                               300-302 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+145 SCQ2-18B1            BCBGUO02 GEN\BEHAVIOR\ABSENTEEISM 1     rarely                                                  303 / C 1.0
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+146 SCQ2-18B2            BCBGUP02 GEN\BEHAVIOR\% ABSENTEEISM                                                         304-306 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+147 SCQ2-18C1            BCBGUO03 GEN\BEHAVIOR\SKIPPING CLASS                                                            307 / C 1.0
+                                                           1     rarely
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+148 SCQ2-18C2            BCBGUP03 GEN\BEHAVIOR\% SKIPPING CLASS                                                      308-310 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+149 SCQ2-18D1            BCBGUO04 GEN\BEHAVIOR\VIOLATING DRESS CODE                                                      311 / C 1.0
+                                                           1     rarely
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+150 SCQ2-18D2            BCBGUP04 GEN\BEHAVIOR\% VIOLATING DRESS CODE                                                312-314 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+151 SCQ2-18E1            BCBGUO05 GEN\BEHAVIOR\CLASSROOM DISTURBANCE                                                     315 / C 1.0
+                                                           1     rarely
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+152 SCQ2-18E2            BCBGUP05 GEN\BEHAVIOR\% CLASSROOM DISTURBANCE                                               316-318 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+153 SCQ2-18F1            BCBGUO06 GEN\BEHAVIOR\CHEATING    1     rarely                                                  319 / C 1.0
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+154 SCQ2-18F2            BCBGUP06 GEN\BEHAVIOR\% CHEATING                                                            320-322 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+155 SCQ2-18G1            BCBGUO07 GEN\BEHAVIOR\PROFANITY   1     rarely                                                  323 / C 1.0
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+156 SCQ2-18G2            BCBGUP07 GEN\BEHAVIOR\% PROFANITY                                                           324-326 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+157 SCQ2-18H1            BCBGUO08 GEN\BEHAVIOR\VANDALISM   1     rarely                                                  327 / C 1.0
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+158 SCQ2-18H2            BCBGUP08 GEN\BEHAVIOR\% VANDALISM                                                           328-330 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+159 SCQ2-18I1            BCBGUO09 GEN\BEHAVIOR\THEFT       1     rarely                                                  331 / C 1.0
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+160 SCQ2-18I2            BCBGUP09 GEN\BEHAVIOR\% THEFT VALUE     percentage                                          332-334 / N 3.0
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+161 SCQ2-18J1            BCBGUO10 GEN\BEHAVIOR\INTIMIDATION OF STUDNTS                                                   335 / C 1.0
+                                                           1     rarely
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+162 SCQ2-18J2            BCBGUP10 GEN\BEHAVIOR\% INTIMIDATN OF STUDNTS                                               336-338 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+163 SCQ2-18K1            BCBGUO11 GEN\BEHAVIOR\INJURY TO STUDENTS                                                        339 / C 1.0
+                                                           1     rarely
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+164 SCQ2-18K2            BCBGUP11 GEN\BEHAVIOR\% INJURY TO STUDENTS                                                  340-342 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+165 SCQ2-18L1            BCBGUO12 GEN\BEHAVIOR\INTIMIDATION OF TEACHRS                                                   343 / C 1.0
+                                                           1     rarely
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+166 SCQ2-18L2            BCBGUP12 GEN\BEHAVIOR\% INTIMIDATN OF TEACHRS                                               344-346 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+167 SCQ2-18M1            BCBGUO13 GEN\BEHAVIOR\INJURY TO TEACHERS                                                        347 / C 1.0
+                                                           1     rarely
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+168 SCQ2-18M2            BCBGUP13 GEN\BEHAVIOR\% INJURY TO TEACHERS                                                  348-350 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+169 SCQ2-18N1            BCBGUO14 GEN\BEHAVIOR\TOBACCO USE 1     rarely                                                  351 / C 1.0
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+170 SCQ2-18N2            BCBGUP14 GEN\BEHAVIOR\% TOBACCO USE                                                         352-354 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+171 SCQ2-18O1            BCBGUO15 GEN\BEHAVIOR\ALCOHOL USE 1     rarely                                                  355 / C 1.0
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+172 SCQ2-18O2            BCBGUP15 GEN\BEHAVIOR\% ALCOHOL USE                                                         356-358 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+173 SCQ2-18P1            BCBGUO16 GEN\BEHAVIOR\ILLEGAL DRUG USE                                                          359 / C 1.0
+                                                           1     rarely
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+174 SCQ2-18P2            BCBGUP16 GEN\BEHAVIOR\% ILLEGAL DRUG USE                                                    360-362 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+175 SCQ2-18Q1            BCBGUO17 GEN\BEHAVIOR\WEAPON USE  1     rarely                                                  363 / C 1.0
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+176 SCQ2-18Q2            BCBGUP17 GEN\BEHAVIOR\% WEAPON USE                                                          364-366 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+177 SCQ2-18R1            BCBGUO18 GEN\BEHAVIOR\INAPPROPRIATE SEXUAL                                                      367 / C 1.0
+                                                           1     rarely
+                                                           2     monthly
+                                                           3     weekly
+                                                           4     daily
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+178 SCQ2-18R2            BCBGUP18 GEN\BEHAVIOR\% INAPPROPRIATE SEXUAL                                                368-370 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+179 SCQ2-19              BCBGINST GEN\DIFFERENCE L-GRADE / U-GRADE                                                       371 / C 1.0
+                                                           1     not checked
+                                                           2     checked
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+180 SCQ2-19A1            BCBGLDYY GEN\L-GRADE\DAYS PER YEAR                                                          372-374 / N 3.0
+                                                       VALUE     days
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+181 SCQ2-19A2            BCBGUDYY GEN\U-GRADE\DAYS PER YEAR                                                          375-377 / N 3.0
+                                                       VALUE     days
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+182 SCQ2-19B1            BCBGLFLW GEN\L-GRADE\FULL DAYS PER WEEK                                                         378 / N 1.0
+                                                       VALUE     days
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+183 SCQ2-19B2            BCBGUFLW GEN\U-GRADE\FULL DAYS PER WEEK                                                         379 / N 1.0
+                                                       VALUE     days
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+184 SCQ2-19C1            BCBGLHFW GEN\L-GRADE\HALF DAYS PER WEEK                                                         380 / N 1.0
+                                                       VALUE     half days
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+185 SCQ2-19C2            BCBGUHFW GEN\U-GRADE\HALF DAYS PER WEEK                                                         381 / N 1.0
+                                                       VALUE     half days
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+186 SCQ2-19D1            BCBGLTHW GEN\L-GRADE\# TOTAL HOURS PER WEEK                                                 382-383 / N 2.0
+                                                       VALUE     hours
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+187 SCQ2-19D2            BCBGUTHW GEN\U-GRADE\# TOTAL HOURS PER WEEK                                                 384-385 / N 2.0
+                                                       VALUE     hours
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+188 SCQ2-19E1            BCBGLIHW GEN\L-GRADE\# INSTR HOURS PER WEEK                                                 386-387 / N 2.0
+                                                       VALUE     hours
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+189 SCQ2-19E2            BCBGUIHW GEN\U-GRADE\# INSTR HOURS PER WEEK                                                 388-389 / N 2.0
+                                                       VALUE     hours
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+190 SCQ2-20              BCBGDIVI GEN\DIVISION INTO INSTR HOURS                                                          390 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+191 SCQ2-20A1            BCBGLPDW GEN\L-GRADE\INST PERIODS PER WEEK                                                  391-392 / N 2.0
+                                                       VALUE     periods
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+192 SCQ2-20A2            BCBGUPDW GEN\U-GRADE\INST PERIODS PER WEEK                                                  393-394 / N 2.0
+                                                       VALUE     periods
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+193 SCQ2-20B1            BCBGLTMP GEN\L-GRADE\DURATION OF INSTR PERIOD                                               395-397 / N 3.0
+                                                       VALUE     minutes
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+194 SCQ2-20B2            BCBGUTMP GEN\U-GRADE\DURATION OF INSTR PERIOD                                               398-400 / N 3.0
+                                                       VALUE     minutes
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+195 SCQ2-21              BCBMRMDL MAT\REMEDIAL TEACHING    1     yes                                                     401 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+196 SCQ2-21A             BCBMRMD1 MAT\REMEDIAL\GROUP IN REGULAR CLASS                                                    402 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+197 SCQ2-21B             BCBMRMD2 MAT\REMEDIAL\WITHDRAWN FROM CLASS                                                      403 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+198 SCQ2-21C             BCBMRMD3 MAT\REMEDIAL\EXTRA TUITION                                                             404 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+199 SCQ2-21D             BCBMRMD4 MAT\REMEDIAL\OTHER       1     yes                                                     405 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+200 SCQ2-22              BCBSRMDL SCI\REMEDIAL TEACHING    1     yes                                                     406 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+201 SCQ2-22A             BCBSRMD1 SCI\REMEDIAL\GROUP IN REGULAR CLASS                                                    407 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+202 SCQ2-22B             BCBSRMD2 SCI\REMEDIAL\WITHDRAWN FROM CLASS                                                      408 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+203 SCQ2-22C             BCBSRMD3 SCI\REMEDIAL\EXTRA TUITION                                                             409 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+204 SCQ2-22D             BCBSRMD4 SCI\REMEDIAL\OTHER       1     yes                                                     410 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+205 SCQ2-23              BCBMENRH MAT\ENRICHMENT ACTIVITIES                                                              411 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+206 SCQ2-23A             BCBMENR1 MAT\ENRCHMNT\GROUP IN REGULAR CLASS                                                    412 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+207 SCQ2-23B             BCBMENR2 MAT\ENRCHMNT\WITHDRAWN FROM CLASS                                                      413 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+208 SCQ2-23C             BCBMENR3 MAT\ENRCHMNT\EXTRA TUITION                                                             414 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+209 SCQ2-23D             BCBMENR4 MAT\ENRCHMNT\OTHER       1     yes                                                     415 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+210 SCQ2-24              BCBSENRH SCI\ENRICHMENT ACTIVITIES                                                              416 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+211 SCQ2-24A             BCBSENR1 SCI\ENRCHMNT\GROUP IN REGULAR CLASS                                                    417 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+212 SCQ2-24B             BCBSENR2 SCI\ENRCHMNT\WITHDRAWN FROM CLASS                                                      418 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+213 SCQ2-24C             BCBSENR3 SCI\ENRCHMNT\EXTRA TUITION                                                             419 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+214 SCQ2-24D             BCBSENR4 SCI\ENRCHMNT\OTHER       1     yes                                                     420 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+215 SCQ2-25              BCBMUSCO MAT\U-GRADE\SAME COURSE OF STUDY                                                       421 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+216 SCQ2-25A             BCBMUC1  MAT\U-GRADE\MINUTES PER WEEK                                                       422-424 / N 3.0
+                                                       VALUE     minutes
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+217 SCQ2-25B             BCBMUC2  MAT\U-GRADE\WEEKS PER YEAR                                                         425-426 / N 2.0
+                                                       VALUE     weeks
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+218 SCQ2-25C             BCBMUC3  MAT\U-GRADE\COURSES AVAILABLE                                                      427-428 / N 2.0
+                                                       VALUE     courses
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+219 SCQ2-25D1            BCBMUC41 MAT\U-GRADE\% MOST ADVANCED COURSE                                                 429-431 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+220 SCQ2-25D2            BCBMUC42 MAT\U-GRADE\% LEAST ADVANCED COURSE                                                432-434 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+221 SCQ2-25E1            BCBMUC51 MAT\U-GRADE\WEEKMINUTES MOST ADVNCD                                                435-437 / N 3.0
+                                                       VALUE     minutes
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+222 SCQ2-25E2            BCBMUC52 MAT\U-GRADE\WEEKMINUTES LEAST ADVNCD                                               438-440 / N 3.0
+                                                       VALUE     minutes
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+223 SCQ2-25F1            BCBMUC61 MAT\U-GRADE\YEARWEEKS MOST ADVANCED                                                441-442 / N 2.0
+                                                       VALUE     weeks
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+224 SCQ2-25F2            BCBMUC62 MAT\U-GRADE\YEARWEEKS LEAST ADVANCED                                               443-444 / N 2.0
+                                                       VALUE     weeks
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+225 SCQ2-26A             BCBMUFC1 MAT\U-GRADE\ACADEMIC PERFORMANCE                                                       445 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+226 SCQ2-26B             BCBMUFC2 MAT\U-GRADE\STANDARDIZED TEST                                                          446 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+227 SCQ2-26C             BCBMUFC3 MAT\U-GRADE\ENTRANCE EXAMINATION                                                       447 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+228 SCQ2-26D             BCBMUFC4 MAT\U-GRADE\ORAL EXAMINATION                                                           448 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+229 SCQ2-26E             BCBMUFC5 MAT\U-GRADE\TEACHER RECOMMENDATIONS                                                    449 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+230 SCQ2-26F             BCBMUFC6 MAT\U-GRADE\PARENTAL WISHES                                                            450 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+231 SCQ2-26G             BCBMUFC7 MAT\U-GRADE\STUDENT'S OWN WISHES                                                       451 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+232 SCQ2-26H             BCBMUFC8 MAT\U-GRADE\CURRICULAR REQUIREMENTS                                                    452 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+233 SCQ2-27              BCBSUSCO SCI\U-GRADE\SAME COURSE OF STUDY                                                       453 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+234 SCQ2-27A             BCBSUC1  SCI\U-GRADE\MINUTES PER WEEK                                                       454-456 / N 3.0
+                                                       VALUE     minutes
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+235 SCQ2-27B             BCBSUC2  SCI\U-GRADE\WEEKS PER YEAR                                                         457-458 / N 2.0
+                                                       VALUE     weeks
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+236 SCQ2-27C             BCBSUC3  SCI\U-GRADE\COURSES AVAILABLE                                                      459-460 / N 2.0
+                                                       VALUE     courses
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+237 SCQ2-27D1            BCBSUC41 SCI\U-GRADE\% MOST ADVANCED COURSE                                                 461-463 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+238 SCQ2-27D2            BCBSUC42 SCI\U-GRADE\% LEAST ADVANCED COURSE                                                464-466 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+239 SCQ2-27E1            BCBSUC51 SCI\U-GRADE\WEEKMINUTES MOST ADVNCD                                                467-469 / N 3.0
+                                                       VALUE     minutes
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+240 SCQ2-27E2            BCBSUC52 SCI\U-GRADE\WEEKMINUTES LEAST ADVNCD                                               470-472 / N 3.0
+                                                       VALUE     minutes
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+241 SCQ2-27F1            BCBSUC61 SCI\U-GRADE\YEARWEEKS MOST ADVANCED                                                473-474 / N 2.0
+                                                       VALUE     weeks
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+242 SCQ2-27F2            BCBSUC62 SCI\U-GRADE\YEARWEEKS LEAST ADVANCED                                               475-476 / N 2.0
+                                                       VALUE     weeks
+                                                          99     missing
+                                                          98     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+243 SCQ2-28A             BCBSUFC1 SCI\U-GRADE\ACADEMIC PERFORMANCE                                                       477 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+244 SCQ2-28B             BCBSUFC2 SCI\U-GRADE\STANDARDIZED TEST                                                          478 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+245 SCQ2-28C             BCBSUFC3 SCI\U-GRADE\ENTRANCE EXAMINATION                                                       479 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+246 SCQ2-28D             BCBSUFC4 SCI\U-GRADE\ORAL EXAMINATION                                                           480 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+247 SCQ2-28E             BCBSUFC5 SCI\U-GRADE\TEACHER RECOMMENDATIONS                                                    481 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+248 SCQ2-28F             BCBSUFC6 SCI\U-GRADE\PARENTAL WISHES                                                            482 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+249 SCQ2-28G             BCBSUFC7 SCI\U-GRADE\STUDENT'S OWN WISHES                                                       483 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+250 SCQ2-28H             BCBSUFC8 SCI\U-GRADE\CURRICULAR REQUIREMENTS                                                    484 / C 1.0
+                                                           1     not important
+                                                           2     somewhat important
+                                                           3     moderately important
+                                                           4     very important
+                                                           5     not applicable
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+251 SCQ2-29A             BCBGSTD1 GEN\% FROM DISADVANTAGED BACKGROUND                                                485-487 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+252 SCQ2-29B             BCBGSTD2 GEN\% PARENTS WITH NO PRIMARY EDUCN                                                488-490 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+253 SCQ2-29C             BCBGSTD3 GEN\% ONE-PARENT FAMILIES                                                          491-493 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+254 SCQ2-29D             BCBGSTD4 GEN\% ATTENDED PRESCHOOL                                                           494-496 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+255 SCQ2-29E             BCBGSTD5 GEN\% 1ST LANGUAGE OTHER SCHOOL LNG                                                497-499 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+256 SCQ2-29F             BCBGSTD6 GEN\% HAVE LEARNING PROBLEMS                                                       500-502 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+257 SCQ2-29G             BCBGSTD7 GEN\% HAVE HEALTH PROBLEMS                                                         503-505 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+258 SCQ2-29H             BCBGSTD8 GEN\% HAVE NUTRITION PROBLEMS                                                      506-508 / N 3.0
+                                                       VALUE     percentage
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+259 SCQ2-30A             BCBGBS01 GEN\ADMITTNC\RESIDENCE IN AREA                                                         509 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+260 SCQ2-30B             BCBGBS02 GEN\ADMITTNC\ACADEMIC PERFORMANCE                                                      510 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+261 SCQ2-30C             BCBGBS03 GEN\ADMITTNC\INTERVIEW WITH STUDENT                                                    511 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+262 SCQ2-30D             BCBGBS04 GEN\ADMITTNC\INTERVIEW WITH PARENTS                                                    512 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+263 SCQ2-30E             BCBGBS05 GEN\ADMITTNC\FAMLY MEMBERS AT SCHOOL                                                   513 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+264 SCQ2-30F             BCBGBS06 GEN\ADMITTNC\DATE OF APPLICATION                                                       514 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+265 SCQ2-30G             BCBGBS07 GEN\ADMITTNC\TEACHER RECOMMENDATION                                                    515 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+266 SCQ2-30H             BCBGBS08 GEN\ADMITTNC\FROM PARTICULAR SCHOOL                                                    516 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+267 SCQ2-30I             BCBGBS09 GEN\ADMITTNC\FORMER STUDENT'S CHILD                                                    517 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+268 SCQ2-30J             BCBGBS10 GEN\ADMITTNC\STANDARDIZED TEST                                                         518 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+269 SCQ2-30K             BCBGBS11 GEN\ADMITTNC\ENTRANCE EXAMINATION                                                      519 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+270 SCQ2-30L             BCBGBS12 GEN\ADMITTNC\ORAL EXAMINATION                                                          520 / C 1.0
+                                                           1     yes
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+271 SCQ2-30M             BCBGBS13 GEN\ADMITTNC\OTHER       1     yes                                                     521 / C 1.0
+                                                           2     no
+                                                           9     missing
+                                                           8     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+272 SCQ2-17A             BCDGTENR GEN\TOTAL SCHOOL ENROLLMENT\B+G                                                    522-525 / N 4.0
+                                                       VALUE     number of students
+                                                        9999     missing
+                                                        9998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+273 SCQ2-17E             BCDGLTER GEN\L-GRADE\ENROLLMENT\B+G                                                         526-529 / N 4.0
+                                                       VALUE     number of students
+                                                        9999     missing
+                                                        9998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+274 SCQ2-17F             BCDGLTRT GEN\L-GRADE\REPEATING GRADE\B+G                                                    530-532 / N 3.0
+                                                       VALUE     number of students
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+275 SCQ2-17I             BCDMLTER MAT\L-GRADE\# STUDYING MATH\B+G                                                    533-536 / N 4.0
+                                                       VALUE     number of students
+                                                        9999     missing
+                                                        9998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+276 SCQ2-17J             BCDSLTER SCI\L-GRADE\# STUDYING SCIENCE\B+G                                                 537-540 / N 4.0
+                                                       VALUE     number of students
+                                                        9999     missing
+                                                        9998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+277 SCQ2-17K             BCDGUTER GEN\U-GRADE\ENROLLMENT\B+G                                                         541-544 / N 4.0
+                                                       VALUE     number of students
+                                                        9999     missing
+                                                        9998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+278 SCQ2-17L             BCDGUTRT GEN\U-GRADE\REPEATING GRADE\B+G                                                    545-547 / N 3.0
+                                                       VALUE     number of students
+                                                         999     missing
+                                                         998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+279 SCQ2-17O             BCDMUTER MAT\U-GRADE\# STUDYING MATH\B+G                                                    548-551 / N 4.0
+                                                       VALUE     number of students
+                                                        9999     missing
+                                                        9998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+280 SCQ2-17P             BCDSUTER SCI\U-GRADE\# STUDYING SCIENCE\B+G                                                 552-555 / N 4.0
+                                                       VALUE     number of students
+                                                        9999     missing
+                                                        9998     not admin.
+------------------------------------------------------------------------------------------------------------------------------------
+281 WEIGHT               WGTFAC1  *1ST STAGE WEIGHT (SCHOOL WEIGHT)*                                                 556-562 / N 7.2
+                                                       VALUE     Weight
+------------------------------------------------------------------------------------------------------------------------------------
+282 WEIGHT               WGTADJ1  *ADJUSTMENT FACTOR 1 (SCHOOL WEIGHT)*                                              563-568 / N 6.3
+                                                       VALUE     Weight
+------------------------------------------------------------------------------------------------------------------------------------
+283 WEIGHT               SCHWGT   *SCHOOL LEVEL WEIGHT*                                                              569-576 / N 8.3
+                                                       VALUE     Weight
+------------------------------------------------------------------------------------------------------------------------------------
+284 WEIGHT               STOTWGTL *SUM OF STUDENT WEIGHTS - LOWER GRADE*                                             577-584 / N 8.2
+                                                       VALUE     Weight
+------------------------------------------------------------------------------------------------------------------------------------
+285 WEIGHT               STOTWGTU *SUM OF STUDENT WEIGHTS - UPPER GRADE*                                             585-592 / N 8.2
+                                                       VALUE     Weight
+------------------------------------------------------------------------------------------------------------------------------------
+286 WEIGHT               STOTWGTE *SUM OF STUDENT WEIGHTS - EXTRA GRADE*                                             593-600 / N 8.2
+                                                       VALUE     Weight
+------------------------------------------------------------------------------------------------------------------------------------
+287 SCORE                BCLGMAT  *MEAN MATHEMATICS SOCRE - LOWER GRADE*                                             601-606 / N 6.2
+                                                       VALUE     Mean score
+------------------------------------------------------------------------------------------------------------------------------------
+288 SCORE                BCLGSCI  *MEAN SCIENCE SCORE - LOWER GRADE*                                                 607-612 / N 6.2
+                                                       VALUE     Mean score
+------------------------------------------------------------------------------------------------------------------------------------
+289 SCORE                BCUGMAT  *MEAN MATHEMATICS SCORE - UPPER GRADE                                              613-618 / N 6.2
+                                                       VALUE     Mean score
+------------------------------------------------------------------------------------------------------------------------------------
+290 SCORE                BCUGSCI  *MEAN SCIENCE SCORE - UPPER GRADE*                                                 619-624 / N 6.2
+                                                       VALUE     Mean score
+------------------------------------------------------------------------------------------------------------------------------------
+291 SCORE                BCEGMAT  *MEAN MATHEMATICS SCORE - EXTRA GRADE*                                             625-630 / N 6.2
+                                                       VALUE     Mean score
+------------------------------------------------------------------------------------------------------------------------------------
+292 SCORE                BCEGSCI  *MEAN SCIENCE SCORE - EXTRA GRADE*                                                 631-636 / N 6.2
+                                                       VALUE     Mean score
+------------------------------------------------------------------------------------------------------------------------------------
+293 SYSTEM               DPCDATE  *FILE CREATION DATE AT DPC HAMBURG*                                                637-642 / N 6.0
+                                                                                                                                                 File Creation Date
+--- END OF CODEBOOK ----------------------------------------------------------------------------------------------------------------
+				BCGCODE.CDT
+
