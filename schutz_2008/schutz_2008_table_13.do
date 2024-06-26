@@ -1,8 +1,9 @@
 cd "C:\Users\1026o\Desktop\eur_america\"
+log using "schutz_2008\schutz_2008_table_13.log", replace
 ssc install _gwtmean // https://stackoverflow.com/questions/66250560/computing-a-weighted-average-per-observation-stata
 
 *** ==================================================
-*** Variables and inconsistency between two datasets
+*** Inconsistency of variable name between two datasets
 *** ==================================================
 *** var                    | TIMSS 1995  | TIMSS 1999
 *** ------------------------------------------------
@@ -24,66 +25,76 @@ ssc install _gwtmean // https://stackoverflow.com/questions/66250560/computing-a
 
 
 *** ==================================================
+*** Inconsistency of country code between two datasets
+*** ==================================================
+*** country                | TIMSS 1995  | TIMSS 1999
+*** ------------------------------------------------
+*** Belgium (Fl)           | 056         | 956
+*** Belgium (Fl)           | 057         | 957
+*** Czech Republic         | 200         | 203
+*** England                | 826         | 926
+*** Scotland               | 827         | 927
+*** Slovenia               | 890         | 705
+*** South Africa           | 717         | 710
+
+
+*** ==================================================
 *** Clean TIMSS 1995
 *** ==================================================
 use "timss_1995\TIMSS_1995_Global.dta", clear
 gen is_1995 = 1
 
-*** Rename variables
+*** Rename variables to fit TIMSS 1999 naming convention
 rename idstud IDSTUD
 rename idcntry IDCNTRY
-rename itsex ITSEX_1995
-rename bsdage BSDAGE_1995
-rename bsbgbook BSBGBOOK_1995
-rename BSBGBRN1 BSBGBRN1_1995
-rename bsbgbrnm BSBGBRNM_1995
-rename bsbgbrnf BSBGBRNF_1995
-rename totwgt TOTWGT_1995
+rename itsex ITSEX
+rename bsdage BSDAGE
+rename bsbgbook BSBGBOOK
+rename bsbgbrnm BSBGBRNM
+rename bsbgbrnf BSBGBRNF
+rename totwgt TOTWGT
+rename BSMPV01 BSMMAT01
+rename BSMPV02 BSMMAT02
+rename BSMPV03 BSMMAT03
+rename BSMPV04 BSMMAT04
+rename BSMPV05 BSMMAT05
+rename BSSPV01 BSSSCI01
+rename BSSPV02 BSSSCI02
+rename BSSPV03 BSSSCI03
+rename BSSPV04 BSSSCI04
+rename BSSPV05 BSSSCI05
 
-*** Generate the "lives_with_parents" variable
-gen lives_with_mother = 0
-replace lives_with_mother = 1 if BSBGADU1 == 1 | BSBGADU5 == 1
-
-gen lives_with_father = 0
-replace lives_with_father = 1 if BSBGADU2 == 1 | BSBGADU6 == 1
-
-gen lives_with_parents_1995 = 0
-replace lives_with_parents_1995 = 1 if lives_with_mother == 1 & lives_with_father == 1
-replace lives_with_parents_1995 = . if BSBGADU1 == . & BSBGADU5 == . & BSBGADU2 == . & BSBGADU6 == .
+*** Fix IDCNTRY to fix TIMSS 1999 codebook
+replace IDCNTRY = 956 if IDCNTRY == 056
+replace IDCNTRY = 957 if IDCNTRY == 057
+replace IDCNTRY = 203 if IDCNTRY == 200
+replace IDCNTRY = 926 if IDCNTRY == 826
+replace IDCNTRY = 927 if IDCNTRY == 827
+replace IDCNTRY = 705 if IDCNTRY == 890
+replace IDCNTRY = 710 if IDCNTRY == 717
 
 *** Keep only 8th graders
 keep if idgrade == 8
 
-*** Drop missing values
-drop if ITSEX_1995 == .
-drop if BSDAGE_1995 == . | BSDAGE_1995 == 98 | BSDAGE_1995 == 99
-drop if lives_with_parents_1995 == .
-drop if BSBGBOOK_1995 == . | BSBGBOOK_1995 == 7
-drop if BSBGBRN1_1995 != 1 & BSBGBRN1_1995 != 2
-drop if BSBGBRNM_1995 != 1 & BSBGBRNM_1995 != 2
-drop if BSBGBRNF_1995 != 1 & BSBGBRNF_1995 != 2
-drop if BSMPV01 == . | BSMPV02 == . | BSMPV03 == . | BSMPV04 == . | BSMPV05 == .
-drop if BSSPV01 == . | BSSPV02 == . | BSSPV03 == . | BSSPV04 == . | BSSPV05 == .
-drop if TOTWGT_1995 == .
+*** Check the number of countries
+*** 35 countries not 40 countries
+*** 5 missing: Denmark(208), Ireland(372), Kuwait(414), Philippines(608), Scotland(927)
+***   These countries have no 8th graders.
+*** 1 unexcepted: an unknown country(201)
+***   Singapore(702) is missing
+codebook IDCNTRY
 
-*** Calculate the "performance" variable
-bysort IDCNTRY: egen BSMPV01_mean = wtmean(BSMPV01), weight(TOTWGT_1995)
-bysort IDCNTRY: egen BSMPV02_mean = wtmean(BSMPV02), weight(TOTWGT_1995)
-bysort IDCNTRY: egen BSMPV03_mean = wtmean(BSMPV03), weight(TOTWGT_1995)
-bysort IDCNTRY: egen BSMPV04_mean = wtmean(BSMPV04), weight(TOTWGT_1995)
-bysort IDCNTRY: egen BSMPV05_mean = wtmean(BSMPV05), weight(TOTWGT_1995)
-gen math_1995_mean = (BSMPV01_mean + BSMPV02_mean + BSMPV03_mean + BSMPV04_mean + BSMPV05_mean) / 5
-
-bysort IDCNTRY: egen BSSPV01_mean = wtmean(BSSPV01), weight(TOTWGT_1995)
-bysort IDCNTRY: egen BSSPV02_mean = wtmean(BSSPV02), weight(TOTWGT_1995)
-bysort IDCNTRY: egen BSSPV03_mean = wtmean(BSSPV03), weight(TOTWGT_1995)
-bysort IDCNTRY: egen BSSPV04_mean = wtmean(BSSPV04), weight(TOTWGT_1995)
-bysort IDCNTRY: egen BSSPV05_mean = wtmean(BSSPV05), weight(TOTWGT_1995)
-gen scie_1995_mean = (BSSPV01_mean + BSSPV02_mean + BSSPV03_mean + BSSPV04_mean + BSSPV05_mean) / 5
-
-gen performance_1995 = (math_1995_mean + scie_1995_mean) / 2
+*** Check sample size with TIMSS 1995 user guide (p.3-14)
+*** Incompatible sample size (paper number/dataset number):
+*** - Australia(036): 7253/7392
+*** - New Zealand(554): 3683/3184
+*** - Sweden(753): 4075/1949
+*** - Switzerland(756): 4855/4275
+*** - England(826): 1776/1803
+tab IDCNTRY
 
 *** Save dataset
+d, s
 save "timss_1995\TIMSS_1995_Global_tmp.dta", replace
 
 
@@ -93,14 +104,48 @@ save "timss_1995\TIMSS_1995_Global_tmp.dta", replace
 use "timss_1999\timss_1999.dta", clear
 gen is_1999 = 1
 
-*** Rename variables
-rename ITSEX ITSEX_1999
-rename BSDAGE BSDAGE_1999
-rename BSBGBOOK BSBGBOOK_1999
-rename BSBGBRN1 BSBGBRN1_1999
-rename BSBGBRNM BSBGBRNM_1999
-rename BSBGBRNF BSBGBRNF_1999
-rename TOTWGT TOTWGT_1999
+*** All responses from Chinese Taipei is duplicated (IDCNTRY=158)
+duplicates drop IDSTUD IDCNTRY, force
+
+*** Check the number of countries
+*** 38 countries
+codebook IDCNTRY
+
+*** Save dataset
+d, s
+save "timss_1999\timss_1999_tmp.dta", replace
+
+
+*** ==================================================
+*** Merge two datasets
+*** ==================================================
+use "timss_1995\TIMSS_1995_Global_tmp.dta", clear
+append using "timss_1999\timss_1999_tmp.dta"
+sort IDCNTRY
+
+*** Check all countries
+*** 50 countries not 54 countries
+*** 4 missing: Denmark(208), Ireland(372), Kuwait(414), Phillppines(608)
+***    These countries only participate in TIMSS 1995 and are exluded b/c no 8th graders.
+codebook IDCNTRY
+
+*** Check all countries that participated in both studies
+*** 23 countries not 24 countries
+*** 1 missing: Singapore(702)
+***   Singpore is missing from TIMSS 1995
+bysort IDCNTRY: egen NCNTRY_1995 = sum(is_1995) // # of response of a country in 1995
+bysort IDCNTRY: egen NCNTRY_1999 = sum(is_1999) // # of response of a country in 1999
+codebook IDCNTRY if NCNTRY_1995 != 0 & NCNTRY_1999 != 0
+
+*** Save dataset
+d, s
+save "timss_1999\timss_1995_1999_merge.dta", replace
+
+
+*** ==================================================
+*** Preprocessing
+*** ==================================================
+use "timss_1999\timss_1995_1999_merge.dta", clear
 
 *** Generate the "lives_with_parents" variable
 gen lives_with_mother = 0
@@ -109,86 +154,99 @@ replace lives_with_mother = 1 if BSBGADU1 == 1 | BSBGADU5 == 1
 gen lives_with_father = 0
 replace lives_with_father = 1 if BSBGADU2 == 1 | BSBGADU6 == 1
 
-gen lives_with_parents_1999 = 0
-replace lives_with_parents_1999 = 1 if lives_with_mother == 1 & lives_with_father == 1
-replace lives_with_parents_1999 = . if BSBGADU1 == . & BSBGADU5 == . & BSBGADU2 == . & BSBGADU6 == .
+gen lives_with_parents = 0
+replace lives_with_parents = 1 if lives_with_mother == 1 & lives_with_father == 1
+replace lives_with_parents = . if BSBGADU1 == . & BSBGADU5 == . & BSBGADU2 == . & BSBGADU6 == .
 
-*** All responses from Chinese Taipei is duplicated (IDCNTRY=158)
-duplicates drop IDSTUD IDCNTRY, force
+*** Generate the "study dummy" variable, indicating the countries participating both TIMSS studies
+gen part_both_studies = 0
+replace part_both_studies = 1 if NCNTRY_1995 != 0 & NCNTRY_1999 != 0
 
 *** Drop missing values
-drop if ITSEX_1999 == .
-drop if BSDAGE_1999 == . | BSDAGE_1999 == 98 | BSDAGE_1999 == 99
-drop if lives_with_parents_1999 == .
-drop if BSBGBOOK_1999 == . | BSBGBOOK_1999 == 8
-drop if BSBGBRN1_1999 != 1 & BSBGBRN1_1999 != 2
-drop if BSBGBRNM_1999 != 1 & BSBGBRNM_1999 != 2
-drop if BSBGBRNF_1999 != 1 & BSBGBRNF_1999 != 2
+drop if ITSEX == .
+drop if BSDAGE == . | BSDAGE == 98 | BSDAGE == 99
+drop if lives_with_parents == .
+drop if BSBGBOOK == . | BSBGBOOK == 7 | BSBGBOOK == 8
+drop if BSBGBRN1 != 1 & BSBGBRN1 != 2
+drop if BSBGBRNM != 1 & BSBGBRNM != 2
+drop if BSBGBRNF != 1 & BSBGBRNF != 2
 drop if BSMMAT01 == . | BSMMAT02 == . | BSMMAT03 == . | BSMMAT04 == . | BSMMAT05 == .
 drop if BSSSCI01 == . | BSSSCI02 == . | BSSSCI03 == . | BSSSCI04 == . | BSSSCI05 == .
-drop if TOTWGT_1999 == .
+drop if TOTWGT == .
 
-*** Calculate the "performance" variable
-bysort IDCNTRY: egen BSMMAT01_mean = wtmean(BSMMAT01), weight(TOTWGT_1999)
-bysort IDCNTRY: egen BSMMAT02_mean = wtmean(BSMMAT02), weight(TOTWGT_1999)
-bysort IDCNTRY: egen BSMMAT03_mean = wtmean(BSMMAT03), weight(TOTWGT_1999)
-bysort IDCNTRY: egen BSMMAT04_mean = wtmean(BSMMAT04), weight(TOTWGT_1999)
-bysort IDCNTRY: egen BSMMAT05_mean = wtmean(BSMMAT05), weight(TOTWGT_1999)
-gen math_1999_mean = (BSMMAT01_mean + BSMMAT02_mean + BSMMAT03_mean + BSMMAT04_mean + BSMMAT05_mean) / 5
+*** Recode dummmy variables and change labels
+label define lives_with_parents 0 "Does not live with parents" 1 "Lives with parents"
+label values lives_with_parents lives_with_parents
 
-bysort IDCNTRY: egen BSSSCI01_mean = wtmean(BSSSCI01), weight(TOTWGT_1999)
-bysort IDCNTRY: egen BSSSCI02_mean = wtmean(BSSSCI02), weight(TOTWGT_1999)
-bysort IDCNTRY: egen BSSSCI03_mean = wtmean(BSSSCI03), weight(TOTWGT_1999)
-bysort IDCNTRY: egen BSSSCI04_mean = wtmean(BSSSCI04), weight(TOTWGT_1999)
-bysort IDCNTRY: egen BSSSCI05_mean = wtmean(BSSSCI05), weight(TOTWGT_1999)
-gen scie_1999_mean = (BSSSCI01_mean + BSSSCI02_mean + BSSSCI03_mean + BSSSCI04_mean + BSSSCI05_mean) / 5
+label define part_both_studies 0 "Participates in one of the studies" 1 "Participates both studies"
+label values part_both_studies part_both_studies
 
-gen performance_1999 = (math_1999_mean + scie_1999_mean) / 2
+recode ITSEX (1=1) (2=0)
+label drop ITSEX
+label define ITSEX 0 "Boy" 1 "Girl"
+label values ITSEX ITSEX
 
-*** Save dataset
-save "timss_1999\timss_1999_tmp.dta", replace
+recode BSBGBRN1 (1=1) (2=0)
+label drop BSBGBRN1
+label define BSBGBRN1 0 "Was not born in the country" 1 "Born in the country (I)"
+label values BSBGBRN1 BSBGBRN1
 
+recode BSBGBRNM (1=1) (2=0)
+label drop BSBGBRNM
+label define BSBGBRNM 0 "Was not born in the country" 1 "Born in the country (Mother)"
+label values BSBGBRNM BSBGBRNM
 
-*** ==================================================
-*** Merge two datasets
-*** ==================================================
-use "timss_1995\TIMSS_1995_Global_tmp.dta", clear
-merge 1:1 IDSTUD IDCNTRY using "timss_1999\timss_1999_tmp.dta"
-sort IDCNTRY
-save "timss_1999\timss_1995_1999_merge.dta", replace
+recode BSBGBRNF (1=1) (2=0)
+label drop BSBGBRNF
+label define BSBGBRNF 0 "Was not born in the country" 1 "Born in the country (Father)"
+label values BSBGBRNF BSBGBRNF
 
 
 *** ==================================================
 *** Table 1
 *** ==================================================
-use "timss_1999\timss_1995_1999_merge.dta", clear
 
-*** performances
-gen performance = .
-replace performance = performance_1995 if performance_1995 != .
-replace performance = performance_1999 if performance_1999 != .
-replace performance = (performance_1995 + performance_1999)/2 if performance_1995 != . & performance_1999 != .
+*** Calculate the "performance" variable
+bysort IDCNTRY: egen BSMMAT01_mean = wtmean(BSMMAT01), weight(TOTWGT)
+bysort IDCNTRY: egen BSMMAT02_mean = wtmean(BSMMAT02), weight(TOTWGT)
+bysort IDCNTRY: egen BSMMAT03_mean = wtmean(BSMMAT03), weight(TOTWGT)
+bysort IDCNTRY: egen BSMMAT04_mean = wtmean(BSMMAT04), weight(TOTWGT)
+bysort IDCNTRY: egen BSMMAT05_mean = wtmean(BSMMAT05), weight(TOTWGT)
+gen math_mean = (BSMMAT01_mean + BSMMAT02_mean + BSMMAT03_mean + BSMMAT04_mean + BSMMAT05_mean) / 5
+
+bysort IDCNTRY: egen BSSSCI01_mean = wtmean(BSSSCI01), weight(TOTWGT)
+bysort IDCNTRY: egen BSSSCI02_mean = wtmean(BSSSCI02), weight(TOTWGT)
+bysort IDCNTRY: egen BSSSCI03_mean = wtmean(BSSSCI03), weight(TOTWGT)
+bysort IDCNTRY: egen BSSSCI04_mean = wtmean(BSSSCI04), weight(TOTWGT)
+bysort IDCNTRY: egen BSSSCI05_mean = wtmean(BSSSCI05), weight(TOTWGT)
+gen scie_mean = (BSSSCI01_mean + BSSSCI02_mean + BSSSCI03_mean + BSSSCI04_mean + BSSSCI05_mean) / 5
+
+gen performance = (math_mean + scie_mean) / 2
+
 tab IDCNTRY, sum(performance)
 
 
+*** ==================================================
+*** Table 3
+*** ==================================================
 
+*** Only taiwan
+gen constant=1
 
+regress performance ///
+constant ///
+BSBGBOOK ///
+BSDAGE ///
+i.ITSEX ///
+i.lives_with_parents ///
+i.part_both_studies ///
+i.BSBGBRN1 ///
+i.BSBGBRNM ///
+i.BSBGBRNF ///
+i.BSBGBRN1##BSBGBOOK ///
+i.BSBGBRNM##BSBGBOOK ///
+i.BSBGBRNF##BSBGBOOK ///
+[aw=TOTWGT] if IDCNTRY == 158
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+log close
 
