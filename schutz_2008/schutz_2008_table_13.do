@@ -186,6 +186,11 @@ label drop ITSEX
 label define ITSEX 0 "Boy" 1 "Girl"
 label values ITSEX ITSEX
 
+recode BSBGBOOK (1=0) (2=1) (3=2) (4=3) (5=4)
+label drop BSBGBOOK
+label define BSBGBOOK 0 "0-10 books" 1 "11-25 books" 2 "26-100 books" 3 "101-200 books" 4 "more than 200 books"
+label values BSBGBOOK BSBGBOOK
+
 recode BSBGBRN1 (1=1) (2=0)
 label drop BSBGBRN1
 label define BSBGBRN1 0 "Was not born in the country" 1 "Born in the country (I)"
@@ -235,7 +240,7 @@ gen constant=1
 
 regress performance ///
 constant ///
-BSBGBOOK ///
+c.BSBGBOOK ///
 BSDAGE ///
 i.ITSEX ///
 i.lives_with_parents ///
@@ -243,9 +248,9 @@ i.part_both_studies ///
 i.BSBGBRN1 ///
 i.BSBGBRNM ///
 i.BSBGBRNF ///
-i.BSBGBRN1##BSBGBOOK ///
-i.BSBGBRNM##BSBGBOOK ///
-i.BSBGBRNF##BSBGBOOK ///
+i.BSBGBRN1#c.BSBGBOOK ///
+i.BSBGBRNM#c.BSBGBOOK ///
+i.BSBGBRNF#c.BSBGBOOK ///
 [aw=TOTWGT] if IDCNTRY == 158
 
 log close
